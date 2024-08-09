@@ -1,0 +1,1006 @@
+[
+  {
+    "id": 10,
+    "dlc": "DLC0",
+    "name": "海苔",
+    "namePY": "haitai",
+    "type": "蔬菜",
+    "from": [
+      "采集-非迷途竹林河流",
+      "购买-妖怪兽道商人、人间之里农户"
+    ],
+    "ingredient_tags": [
+      "鲜",
+      "素"
+    ],
+    "level": 1,
+    "price": 3
+  },
+  {
+    "id": 29,
+    "dlc": "DLC0",
+    "name": "黄油",
+    "namePY": "huangyou",
+    "type": "其他",
+    "from": [
+      "购买-红魔馆地精、地灵殿地狱鸦"
+    ],
+    "ingredient_tags": [
+      "重油"
+    ],
+    "level": 2,
+    "price": 8
+  },
+  {
+    "id": 30,
+    "dlc": "DLC0",
+    "name": "面粉",
+    "namePY": "mianfen",
+    "type": "其他",
+    "from": [
+      "购买-红魔馆地精、魔法森林上海人形"
+    ],
+    "ingredient_tags": [
+      "饱腹"
+    ],
+    "level": 2,
+    "price": 10
+  },
+  {
+    "id": 1,
+    "dlc": "DLC0",
+    "name": "猪肉",
+    "namePY": "zhurou",
+    "type": "肉类",
+    "from": [
+      "采集-妖怪之山捕兽夹(概率)",
+      "购买-妖怪兽道商人、人间之里农户"
+    ],
+    "ingredient_tags": [
+      "肉"
+    ],
+    "level": 1,
+    "price": 10
+  },
+  {
+    "id": 5,
+    "dlc": "DLC0",
+    "name": "豆腐",
+    "namePY": "doufu",
+    "type": "蔬菜",
+    "from": [
+      "购买-妖怪兽道商人、人间之里农户、香霖堂(概率)、地灵殿地狱鸦"
+    ],
+    "ingredient_tags": [
+      "素",
+      "家常",
+      "清淡"
+    ],
+    "level": 1,
+    "price": 8
+  },
+  {
+    "id": 0,
+    "dlc": "DLC0",
+    "name": "鸡蛋",
+    "namePY": "jidan",
+    "type": "其他",
+    "from": [
+      "采集-人间之里鸡窝、旧地狱鸡窝",
+      "购买-妖怪兽道商人、人间之里农户、香霖堂(概率)、魔法森林上海人形、魔界小丑"
+    ],
+    "ingredient_tags": [
+      "生"
+    ],
+    "level": 1,
+    "price": 4
+  },
+  {
+    "id": 27,
+    "dlc": "DLC0",
+    "name": "露水",
+    "namePY": "lushui",
+    "type": "其他",
+    "from": [
+      "采集-妖怪兽道露水、红魔馆露水、魔法森林露水、神灵庙露水、太阳花田露水",
+      "购买-神灵庙道士、太阳花田太阳花精"
+    ],
+    "ingredient_tags": [
+      "清淡"
+    ],
+    "level": 1,
+    "price": 10
+  },
+  {
+    "id": 17,
+    "dlc": "DLC0",
+    "name": "蘑菇",
+    "namePY": "mogu",
+    "type": "蔬菜",
+    "from": [
+      "采集-妖怪兽道露水(概率)、红魔馆露水(概率)、博丽神社蘑菇、迷途竹林蘑菇、魔法森林蘑菇、地灵殿蘑菇、太阳花田蘑菇",
+      "购买-香霖堂(概率)、魔法森林上海人形、神灵庙道士"
+    ],
+    "ingredient_tags": [
+      "素",
+      "鲜",
+      "菌类"
+    ],
+    "level": 3,
+    "price": 18
+  },
+  {
+    "id": 25,
+    "dlc": "DLC0",
+    "name": "蝉蜕",
+    "namePY": "chantui",
+    "type": "其他",
+    "from": [
+      "采集-妖怪兽道蜂巢、博丽神社参道西侧银杏、旧地狱银杏"
+    ],
+    "ingredient_tags": [
+      "猎奇"
+    ],
+    "level": 1,
+    "price": 5
+  },
+  {
+    "id": 2,
+    "dlc": "DLC0",
+    "name": "牛肉",
+    "namePY": "niurou",
+    "type": "肉类",
+    "from": [
+      "购买-妖怪兽道商人、人间之里农户、魔法森林上海人形、旧地狱鬼商"
+    ],
+    "ingredient_tags": [
+      "肉"
+    ],
+    "level": 2,
+    "price": 15
+  },
+  {
+    "id": 7,
+    "dlc": "DLC0",
+    "name": "洋葱",
+    "namePY": "yangcong",
+    "type": "蔬菜",
+    "from": [
+      "采集-人间之里农田",
+      "购买-妖怪兽道商人、人间之里农户"
+    ],
+    "ingredient_tags": [
+      "素",
+      "鲜"
+    ],
+    "level": 2,
+    "price": 12
+  },
+  {
+    "id": 24,
+    "dlc": "DLC0",
+    "name": "蜂蜜",
+    "namePY": "fengmi",
+    "type": "其他",
+    "from": [
+      "采集-妖怪兽道蜂巢、妖怪之山蜂巢、命莲寺蜂巢、太阳花田蜂巢、人间之里银杏(概率)、博丽神社银杏(概率)",
+      "购买-香霖堂(概率)、魔法森林上海人形、命莲寺娜兹玲、太阳花田太阳花精"
+    ],
+    "ingredient_tags": [
+      "甜"
+    ],
+    "level": 2,
+    "price": 15
+  },
+  {
+    "id": 32,
+    "dlc": "DLC0",
+    "name": "糯米",
+    "namePY": "nuomi",
+    "type": "其他",
+    "from": [
+      "购买-迷途竹林妖怪兔、魔法森林上海人形、香霖堂(概率)"
+    ],
+    "ingredient_tags": [],
+    "level": 3,
+    "price": 15
+  },
+  {
+    "id": 33,
+    "dlc": "DLC0",
+    "name": "月光草",
+    "namePY": "yueguangcao",
+    "type": "其他",
+    "from": [
+      "采集-妖怪兽道南侧亭子月光草(需借道迷途竹林)",
+      "购买-迷途竹林妖怪兔(概率)、地灵殿地狱鸦",
+      "任务-阿求小姐的色纸"
+    ],
+    "ingredient_tags": [
+      "不可思议",
+      "清淡",
+      "梦幻",
+      "文化底蕴"
+    ],
+    "level": 5,
+    "price": 70
+  },
+  {
+    "id": 9,
+    "dlc": "DLC0",
+    "name": "萝卜",
+    "namePY": "luobu",
+    "type": "蔬菜",
+    "from": [
+      "采集-妖怪兽道花丛、博丽神社蘑菇(概率)、魔法森林花丛、人间之里农田、太阳花田温室",
+      "购买-妖怪兽道商人、人间之里农户、旧地狱鬼商"
+    ],
+    "ingredient_tags": [
+      "素",
+      "下酒"
+    ],
+    "level": 2,
+    "price": 16
+  },
+  {
+    "id": 6,
+    "dlc": "DLC0",
+    "name": "土豆",
+    "namePY": "tudou",
+    "type": "蔬菜",
+    "from": [
+      "采集-妖怪兽道花丛、博丽神社花丛、妖怪之山花丛",
+      "购买-妖怪兽道商人、人间之里农户"
+    ],
+    "ingredient_tags": [
+      "素",
+      "家常"
+    ],
+    "level": 2,
+    "price": 10
+  },
+  {
+    "id": 12,
+    "dlc": "DLC0",
+    "name": "八目鳗",
+    "namePY": "bamuman",
+    "type": "海鲜",
+    "from": [
+      "采集-妖怪兽道河流(概率)、妖怪之山中心瀑布(概率)、神灵庙水涡、辉针城水涡、辉针城碗之后(概率)",
+      "购买-辉针城不良少年"
+    ],
+    "ingredient_tags": [
+      "水产",
+      "招牌",
+      "鲜"
+    ],
+    "level": 2,
+    "price": 14
+  },
+  {
+    "id": 35,
+    "dlc": "DLC0",
+    "name": "辣椒",
+    "namePY": "lajiao",
+    "type": "其他",
+    "from": [
+      "采集-妖怪兽道花丛(概率)、魔界辣椒丛",
+      "购买-妖怪兽道商人、人间之里农户、命莲寺娜兹玲、旧地狱鬼商、魔界小丑"
+    ],
+    "ingredient_tags": [
+      "辣"
+    ],
+    "level": 1,
+    "price": 2
+  },
+  {
+    "id": 28,
+    "dlc": "DLC0",
+    "name": "竹笋",
+    "namePY": "zhusun",
+    "type": "蔬菜",
+    "from": [
+      "采集-迷途竹林竹笋、辉针城竹笋、辉针城竹子(概率)",
+      "购买-香霖堂(概率)、妖怪兽道商人(概率)、旧地狱鬼商、月之都月兔"
+    ],
+    "ingredient_tags": [
+      "素",
+      "清淡"
+    ],
+    "level": 3,
+    "price": 40
+  },
+  {
+    "id": 26,
+    "dlc": "DLC0",
+    "name": "虾",
+    "namePY": "xia",
+    "type": "海鲜",
+    "from": [
+      "采集-非妖怪兽道河流(概率)、命莲寺东北莲花池、神灵庙水涡"
+    ],
+    "ingredient_tags": [
+      "水产",
+      "鲜"
+    ],
+    "level": 2,
+    "price": 30
+  },
+  {
+    "id": 21,
+    "dlc": "DLC0",
+    "name": "桃子",
+    "namePY": "taozi",
+    "type": "其他",
+    "from": [
+      "采集-博丽神社桃树、魔法森林桃树、太阳花田桃树",
+      "购买-香霖堂(概率)、月之都月兔"
+    ],
+    "ingredient_tags": [
+      "果味",
+      "甜"
+    ],
+    "level": 3,
+    "price": 10
+  },
+  {
+    "id": 34,
+    "dlc": "DLC0",
+    "name": "冰块",
+    "namePY": "bingkuai",
+    "type": "其他",
+    "from": [
+      "采集-红魔馆河流、神灵庙北部冰块",
+      "购买-香霖堂(概率)"
+    ],
+    "ingredient_tags": [
+      "凉爽"
+    ],
+    "level": 1,
+    "price": 2
+  },
+  {
+    "id": 11,
+    "dlc": "DLC0",
+    "name": "鳟鱼",
+    "namePY": "zunyu",
+    "type": "海鲜",
+    "from": [
+      "采集-妖怪兽道河流(概率)、妖怪之山中心瀑布、辉针城碗之后(概率)",
+      "购买-旧地狱鬼商"
+    ],
+    "ingredient_tags": [
+      "鲜",
+      "水产"
+    ],
+    "level": 1,
+    "price": 8
+  },
+  {
+    "id": 4,
+    "dlc": "DLC0",
+    "name": "野猪肉",
+    "namePY": "yezhurou",
+    "type": "肉类",
+    "from": [
+      "采集-妖怪兽道捕兽夹(概率)、妖怪之山捕兽夹(概率)",
+      "购买-博丽神社妖精女仆、辉针城不良少年"
+    ],
+    "ingredient_tags": [
+      "肉"
+    ],
+    "level": 3,
+    "price": 25
+  },
+  {
+    "id": 31,
+    "dlc": "DLC0",
+    "name": "竹子",
+    "namePY": "zhuzi",
+    "type": "其他",
+    "from": [
+      "采集-迷途竹林竹笋、迷途竹林竹子(概率)、辉针城竹笋、辉针城竹子(概率)",
+      "购买-香霖堂(概率)、妖怪兽道商人(概率)、旧地狱鬼商"
+    ],
+    "ingredient_tags": [
+      "适合拍照"
+    ],
+    "level": 3,
+    "price": 15
+  },
+  {
+    "id": 19,
+    "dlc": "DLC0",
+    "name": "极上金枪鱼",
+    "namePY": "jishangjinqiangyu",
+    "type": "海鲜",
+    "from": [
+      "采集-红魔馆河流(概率)、迷途竹林水涡、妖怪之山南侧瀑布(概率)、辉针城水涡(概率)、辉针城碗之后(概率)",
+      "购买-博丽神社妖精女仆(概率)、红魔馆地精、迷途竹林妖怪兔",
+      "任务-阿求小姐的色纸"
+    ],
+    "ingredient_tags": [
+      "水产",
+      "海味",
+      "传说",
+      "鲜",
+      "高级"
+    ],
+    "level": 5,
+    "price": 34
+  },
+  {
+    "id": 8,
+    "dlc": "DLC0",
+    "name": "南瓜",
+    "namePY": "nangua",
+    "type": "蔬菜",
+    "from": [
+      "采集-人间之里农田",
+      "购买-妖怪兽道商人、人间之里农户、魔法森林上海人形"
+    ],
+    "ingredient_tags": [
+      "饱腹",
+      "素"
+    ],
+    "level": 2,
+    "price": 14
+  },
+  {
+    "id": 13,
+    "dlc": "DLC0",
+    "name": "三文鱼",
+    "namePY": "sanwenyu",
+    "type": "海鲜",
+    "from": [
+      "采集-非妖怪兽道河流(概率)、神灵庙水涡、辉针城水涡、辉针城碗之后(概率)",
+      "购买-妖怪兽道商人(概率)、旧地狱鬼商、神灵庙道士"
+    ],
+    "ingredient_tags": [
+      "水产",
+      "高级",
+      "鲜"
+    ],
+    "level": 3,
+    "price": 24
+  },
+  {
+    "id": 22,
+    "dlc": "DLC0",
+    "name": "白果",
+    "namePY": "baiguo",
+    "type": "其他",
+    "from": [
+      "采集-人间之里银杏、博丽神社银杏、魔法森林银杏、太阳花田银杏、妖怪之山蜂巢、地灵殿花丛",
+      "购买-地灵殿地狱鸦、魔法森林上海人形"
+    ],
+    "ingredient_tags": [
+      "适合拍照"
+    ],
+    "level": 2,
+    "price": 7
+  },
+  {
+    "id": 16,
+    "dlc": "DLC0",
+    "name": "和牛",
+    "namePY": "heniu",
+    "type": "肉类",
+    "from": [
+      "采集-旧地狱捕兽夹",
+      "购买-博丽神社妖精女仆、红魔馆地精、迷途竹林妖怪兔、神灵庙道士",
+      "任务-阿求小姐的色纸"
+    ],
+    "ingredient_tags": [
+      "肉",
+      "传说",
+      "高级"
+    ],
+    "level": 5,
+    "price": 40
+  },
+  {
+    "id": 15,
+    "dlc": "DLC0",
+    "name": "黑毛猪肉",
+    "namePY": "heimaozhurou",
+    "type": "肉类",
+    "from": [
+      "采集-妖怪兽道捕兽夹(概率)、妖怪之山捕兽夹(概率)、旧地狱捕兽夹",
+      "购买-博丽神社妖精女仆(概率)、旧地狱鬼商"
+    ],
+    "ingredient_tags": [
+      "肉",
+      "传说",
+      "山珍"
+    ],
+    "level": 4,
+    "price": 35
+  },
+  {
+    "id": 18,
+    "dlc": "DLC0",
+    "name": "松露",
+    "namePY": "songlu",
+    "type": "蔬菜",
+    "from": [
+      "采集-妖怪兽道露水(概率)、红魔馆露水(概率)、博丽神社蘑菇(概率)、迷途竹林蘑菇(概率)、地灵殿蘑菇(概率)",
+      "购买-博丽神社妖精女仆(概率)、太阳花田太阳花精、魔法森林上海人形、神灵庙道士、辉针城不良少年",
+      "任务-阿求小姐的色纸"
+    ],
+    "ingredient_tags": [
+      "素",
+      "传说",
+      "山珍",
+      "鲜",
+      "菌类",
+      "高级"
+    ],
+    "level": 5,
+    "price": 50
+  },
+  {
+    "id": 20,
+    "dlc": "DLC0",
+    "name": "河豚",
+    "namePY": "hetun",
+    "type": "海鲜",
+    "from": [
+      "采集-红魔馆河流(概率)、地灵殿水池",
+      "购买-博丽神社妖精女仆(概率)、红魔馆地精、迷途竹林妖怪兔、神灵庙道士",
+      "任务-阿求小姐的色纸"
+    ],
+    "ingredient_tags": [
+      "水产",
+      "海味",
+      "鲜"
+    ],
+    "level": 5,
+    "price": 42
+  },
+  {
+    "id": 26,
+    "dlc": "DLC0",
+    "name": "幻昙华",
+    "namePY": "huantanhua",
+    "type": "其他",
+    "from": [
+      "采集-妖怪兽道东侧山丘(需借道博丽神社)、地灵殿东侧喷泉、地灵殿西北侧游乐场(概率)、命莲寺西南花丛",
+      "任务-阿求小姐的色纸"
+    ],
+    "ingredient_tags": [
+      "传说",
+      "梦幻",
+      "不可思议",
+      "高级"
+    ],
+    "level": 5,
+    "price": 70
+  },
+  {
+    "id": 3,
+    "dlc": "DLC0",
+    "name": "鹿肉",
+    "namePY": "lurou",
+    "type": "肉类",
+    "from": [
+      "采集-妖怪兽道捕兽夹(概率)",
+      "购买-迷途竹林妖怪兔、神灵庙道士"
+    ],
+    "ingredient_tags": [
+      "肉"
+    ],
+    "level": 2,
+    "price": 20
+  },
+  {
+    "id": 14,
+    "dlc": "DLC0",
+    "name": "金枪鱼",
+    "namePY": "jinqiangyu",
+    "type": "海鲜",
+    "from": [
+      "采集-非妖怪兽道河流(概率)、神灵庙水涡、辉针城碗之后(概率)",
+      "购买-神灵庙道士"
+    ],
+    "ingredient_tags": [
+      "水产",
+      "鲜",
+      "高级"
+    ],
+    "level": 3,
+    "price": 30
+  },
+  {
+    "id": 1000,
+    "dlc": "DLC1",
+    "name": "黄瓜",
+    "namePY": "huanggua",
+    "type": "蔬菜",
+    "from": [
+      "采集-妖怪之山黄瓜",
+      "购买-妖怪之山河童(概率)、太阳花田太阳花精(概率)"
+    ],
+    "ingredient_tags": [
+      "家常",
+      "素",
+      "清淡"
+    ],
+    "level": 1,
+    "price": 7
+  },
+  {
+    "id": 1003,
+    "dlc": "DLC1",
+    "name": "黑盐",
+    "namePY": "heiyan",
+    "type": "其他",
+    "from": [
+      "采集-妖怪之山黑盐",
+      "购买-妖怪之山河童(概率)、命莲寺娜兹玲"
+    ],
+    "ingredient_tags": [
+      "咸"
+    ],
+    "level": 1,
+    "price": 3
+  },
+  {
+    "id": 1004,
+    "dlc": "DLC1",
+    "name": "奶油",
+    "namePY": "naiyou",
+    "type": "其他",
+    "from": [
+      "购买-魔法森林上海人形(概率)、命莲寺娜兹玲、太阳花田太阳花精、魔界小丑"
+    ],
+    "ingredient_tags": [
+      "家常",
+      "甜",
+      "西式"
+    ],
+    "level": 1,
+    "price": 9
+  },
+  {
+    "id": 1001,
+    "dlc": "DLC1",
+    "name": "章鱼",
+    "namePY": "zhangyu",
+    "type": "海鲜",
+    "from": [
+      "采集-辉针城碗之后(概率)",
+      "购买-妖怪之山河童(概率)"
+    ],
+    "ingredient_tags": [
+      "水产",
+      "鲜",
+      "海味"
+    ],
+    "level": 2,
+    "price": 12
+  },
+  {
+    "id": 36,
+    "dlc": "DLC0",
+    "name": "葡萄",
+    "namePY": "putao",
+    "type": "其他",
+    "from": [
+      "采集-红魔馆葡萄、太阳花田葡萄",
+      "购买-魔法森林上海人形(概率)、地灵殿地狱鸦(概率)"
+    ],
+    "ingredient_tags": [
+      "果味",
+      "甜"
+    ],
+    "level": 1,
+    "price": 5
+  },
+  {
+    "id": 1005,
+    "dlc": "DLC1",
+    "name": "螃蟹",
+    "namePY": "pangxie",
+    "type": "海鲜",
+    "from": [
+      "采集-妖怪之山西北瀑布、辉针城碗之后(概率)",
+      "购买-妖怪之山河童(概率)、辉针城不良少年(概率)"
+    ],
+    "ingredient_tags": [
+      "水产",
+      "高级",
+      "鲜"
+    ],
+    "level": 3,
+    "price": 10
+  },
+  {
+    "id": 1002,
+    "dlc": "DLC1",
+    "name": "海胆",
+    "namePY": "haidan",
+    "type": "海鲜",
+    "from": [
+      "采集-辉针城碗之后",
+      "购买-妖怪之山河童(概率)、辉针城不良少年(概率)"
+    ],
+    "ingredient_tags": [
+      "水产",
+      "高级",
+      "传说",
+      "鲜",
+      "海味"
+    ],
+    "level": 3,
+    "price": 18
+  },
+  {
+    "id": 2002,
+    "dlc": "DLC2",
+    "name": "芝士",
+    "namePY": "zhishi",
+    "type": "其他",
+    "from": [
+      "采集-地灵殿东北侧仓库",
+      "购买-地灵殿地狱鸦、命莲寺娜兹玲"
+    ],
+    "ingredient_tags": [
+      "高级",
+      "咸",
+      "鲜"
+    ],
+    "level": 2,
+    "price": 18
+  },
+  {
+    "id": 2001,
+    "dlc": "DLC2",
+    "name": "柠檬",
+    "namePY": "ningmeng",
+    "type": "其他",
+    "from": [
+      "采集-旧地狱桥头柠檬树",
+      "购买-地灵殿地狱鸦"
+    ],
+    "ingredient_tags": [
+      "酸",
+      "果味"
+    ],
+    "level": 1,
+    "price": 8
+  },
+  {
+    "id": 3001,
+    "dlc": "DLC3",
+    "name": "地瓜",
+    "namePY": "digua",
+    "type": "其他",
+    "from": [
+      "采集-命莲寺西北花丛",
+      "购买-命莲寺娜兹玲"
+    ],
+    "ingredient_tags": [
+      "饱腹"
+    ],
+    "level": 1,
+    "price": 8
+  },
+  {
+    "id": 3003,
+    "dlc": "DLC3",
+    "name": "板栗",
+    "namePY": "banli",
+    "type": "蔬菜",
+    "from": [
+      "采集-神灵庙中部栗树",
+      "购买-神灵庙道士"
+    ],
+    "ingredient_tags": [
+      "家常",
+      "素"
+    ],
+    "level": 2,
+    "price": 10
+  },
+  {
+    "id": 3002,
+    "dlc": "DLC3",
+    "name": "松子",
+    "namePY": "songzi",
+    "type": "其他",
+    "from": [
+      "采集-神灵庙中部松树",
+      "购买-神灵庙道士"
+    ],
+    "ingredient_tags": [
+      "招牌",
+      "清淡",
+      "高级"
+    ],
+    "level": 2,
+    "price": 15
+  },
+  {
+    "id": 3000,
+    "dlc": "DLC3",
+    "name": "莲子",
+    "namePY": "lianzi",
+    "type": "其他",
+    "from": [
+      "采集-莲寺东北并蒂莲、神灵庙东侧并蒂莲"
+    ],
+    "ingredient_tags": [
+      "招牌",
+      "清淡",
+      "文化底蕴"
+    ],
+    "level": 3,
+    "price": 22
+  },
+  {
+    "id": 2000,
+    "dlc": "DLC2",
+    "name": "并蒂莲",
+    "namePY": "bingdilian",
+    "type": "其他",
+    "from": [
+      "采集-旧地狱桥头并蒂莲、神灵庙桥头并蒂莲、命莲寺东北并蒂莲"
+    ],
+    "ingredient_tags": [
+      "文化底蕴",
+      "高级",
+      "传说",
+      "清淡",
+      "梦幻"
+    ],
+    "level": 3,
+    "price": 36
+  },
+  {
+    "id": 4004,
+    "dlc": "DLC4",
+    "name": "西红柿",
+    "namePY": "xihongshi",
+    "type": "蔬菜",
+    "from": [
+      "采集-太阳花田中部温室"
+    ],
+    "ingredient_tags": [
+      "素"
+    ],
+    "level": 1,
+    "price": 8
+  },
+  {
+    "id": 4001,
+    "dlc": "DLC4",
+    "name": "红豆",
+    "namePY": "hongdou",
+    "type": "其他",
+    "from": [
+      "采集-辉针城东部红豆树",
+      "购买-辉针城不良少年、月之都月兔"
+    ],
+    "ingredient_tags": [
+      "家常"
+    ],
+    "level": 2,
+    "price": 18
+  },
+  {
+    "id": 4000,
+    "dlc": "DLC4",
+    "name": "梅子",
+    "namePY": "meizi",
+    "type": "其他",
+    "from": [
+      "采集-辉针城东部红豆树(概率)",
+      "购买-辉针城不良少年"
+    ],
+    "ingredient_tags": [
+      "咸",
+      "小巧"
+    ],
+    "level": 1,
+    "price": 12
+  },
+  {
+    "id": 4002,
+    "dlc": "DLC4",
+    "name": "鲜花",
+    "namePY": "xianhua",
+    "type": "其他",
+    "from": [
+      "采集-太阳花田西部鲜花、太阳花田中部鲜花",
+      "购买-辉针城不良少年"
+    ],
+    "ingredient_tags": [
+      "梦幻",
+      "适合拍照"
+    ],
+    "level": 3,
+    "price": 45
+  },
+  {
+    "id": 4003,
+    "dlc": "DLC4",
+    "name": "香椿",
+    "namePY": "xiangchun",
+    "type": "蔬菜",
+    "from": [
+      "采集-太阳花田西北香椿树",
+      "购买-太阳花田太阳花精"
+    ],
+    "ingredient_tags": [
+      "毒",
+      "素"
+    ],
+    "level": 2,
+    "price": 20
+  },
+  {
+    "id": 5003,
+    "dlc": "DLC5",
+    "name": "薜茘",
+    "namePY": "bili",
+    "type": "其他",
+    "from": [
+      "购买-月之都月兔"
+    ],
+    "ingredient_tags": [
+      "凉爽",
+      "梦幻"
+    ],
+    "level": 2,
+    "price": 21
+  },
+  {
+    "id": 5000,
+    "dlc": "DLC5",
+    "name": "可可豆",
+    "namePY": "kekedou",
+    "type": "其他",
+    "from": [
+      "购买-魔界小丑(概率)"
+    ],
+    "ingredient_tags": [
+      "甜",
+      "不可思议"
+    ],
+    "level": 3,
+    "price": 22
+  },
+  {
+    "id": 5004,
+    "dlc": "DLC5",
+    "name": "银耳",
+    "namePY": "yiner",
+    "type": "其他",
+    "from": [
+      "购买-月之都月兔"
+    ],
+    "ingredient_tags": [
+      "菌类",
+      "清淡"
+    ],
+    "level": 3,
+    "price": 14
+  },
+  {
+    "id": 5001,
+    "dlc": "DLC5",
+    "name": "西兰花",
+    "namePY": "xilanhua",
+    "type": "蔬菜",
+    "from": [
+      "购买-魔界小丑(概率)"
+    ],
+    "ingredient_tags": [
+      "素",
+      "家常"
+    ],
+    "level": 2,
+    "price": 18
+  }
+]

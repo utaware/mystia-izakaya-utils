@@ -1,0 +1,820 @@
+[
+  {
+    "id": 0,
+    "dlc": "DLC0",
+    "name": "绿茶",
+    "namePY": "lvcha",
+    "price": 1,
+    "level": 1,
+    "beverage_tags": [
+      "无酒精"
+    ],
+    "from": [
+      "自带"
+    ]
+  },
+  {
+    "id": 12,
+    "dlc": "DLC0",
+    "name": "雀酒",
+    "namePY": "quejiu",
+    "price": 50,
+    "level": 2,
+    "beverage_tags": [
+      "中酒精",
+      "可加冰",
+      "可加热",
+      "清酒",
+      "辛"
+    ],
+    "from": [
+      "采集-兽道东侧、太阳花田树桩下"
+    ]
+  },
+  {
+    "id": 1,
+    "dlc": "DLC0",
+    "name": "果味High Ball",
+    "namePY": "guoweiHighBall",
+    "price": 12,
+    "level": 1,
+    "beverage_tags": [
+      "低酒精",
+      "可加冰",
+      "鸡尾酒",
+      "西洋酒",
+      "水果",
+      "甘",
+      "苦"
+    ],
+    "from": [
+      "购买-妖怪兽道商人"
+    ]
+  },
+  {
+    "id": 2,
+    "dlc": "DLC0",
+    "name": "果味SOUR",
+    "namePY": "guoweiSOUR",
+    "price": 12,
+    "level": 1,
+    "beverage_tags": [
+      "低酒精",
+      "可加冰",
+      "烧酒",
+      "鸡尾酒",
+      "水果",
+      "甘",
+      "苦"
+    ],
+    "from": [
+      "购买-妖怪兽道商人"
+    ]
+  },
+  {
+    "id": 3,
+    "dlc": "DLC0",
+    "name": "淇",
+    "namePY": "qi",
+    "price": 18,
+    "level": 1,
+    "beverage_tags": [
+      "低酒精",
+      "可加冰",
+      "清酒",
+      "鸡尾酒",
+      "气泡",
+      "甘",
+      "辛",
+      "苦"
+    ],
+    "from": [
+      "购买-妖怪兽道商人、人间之里酒商"
+    ]
+  },
+  {
+    "id": 10,
+    "dlc": "DLC0",
+    "name": "水濑祭",
+    "namePY": "shuilaiji",
+    "price": 130,
+    "level": 3,
+    "beverage_tags": [
+      "中酒精",
+      "可加冰",
+      "可加热",
+      "清酒",
+      "直饮"
+    ],
+    "from": [
+      "采集-兽道南侧河边、花田东侧向日葵田、月之都月虹池右上(概率)",
+      "购买-旧地狱鬼商、命莲寺娜兹琳",
+      "任务-阿求小姐的色纸"
+    ]
+  },
+  {
+    "id": 6,
+    "dlc": "DLC0",
+    "name": "梅酒",
+    "namePY": "meijiu",
+    "price": 32,
+    "level": 2,
+    "beverage_tags": [
+      "中酒精",
+      "可加冰",
+      "可加热",
+      "利口酒",
+      "水果"
+    ],
+    "from": [
+      "购买-人间之里酒商"
+    ]
+  },
+  {
+    "id": 26,
+    "dlc": "DLC0",
+    "name": "波子汽水",
+    "namePY": "boziqishui",
+    "price": 30,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "气泡",
+      "现代"
+    ],
+    "from": [
+      "购买-人间之里铃瑚"
+    ]
+  },
+  {
+    "id": 4,
+    "dlc": "DLC0",
+    "name": "超ZUN啤酒",
+    "namePY": "chaoZUNpijiu",
+    "price": 18,
+    "level": 1,
+    "beverage_tags": [
+      "低酒精",
+      "可加冰",
+      "啤酒",
+      "苦"
+    ],
+    "from": [
+      "购买-人间之里酒商"
+    ]
+  },
+  {
+    "id": 5,
+    "dlc": "DLC0",
+    "name": "日月星",
+    "namePY": "riyuexing",
+    "price": 34,
+    "level": 2,
+    "beverage_tags": [
+      "中酒精",
+      "可加冰",
+      "可加热",
+      "清酒",
+      "直饮"
+    ],
+    "from": [
+      "购买-人间之里酒商"
+    ]
+  },
+  {
+    "id": 11,
+    "dlc": "DLC0",
+    "name": "晓",
+    "namePY": "xiao",
+    "price": 400,
+    "level": 4,
+    "beverage_tags": [
+      "高酒精",
+      "可加冰",
+      "西洋酒",
+      "直饮"
+    ],
+    "from": [
+      "采集-月之都月虹池右上(概率)",
+      "购买-博丽神社妖精女仆(概率)",
+      "任务-女仆长的采购委托、阿求小姐的色纸"
+    ]
+  },
+  {
+    "id": 20,
+    "dlc": "DLC0",
+    "name": "十四夜",
+    "namePY": "shisiye",
+    "price": 440,
+    "level": 4,
+    "beverage_tags": [
+      "中酒精",
+      "清酒",
+      "可加冰",
+      "可加热",
+      "古典",
+      "甘"
+    ],
+    "from": [
+      "采集-月之都月虹池右上(概率)",
+      "购买-迷途竹林妖怪兔",
+      "任务-女仆长的采购委托、阿求小姐的色纸"
+    ]
+  },
+  {
+    "id": 21,
+    "dlc": "DLC0",
+    "name": "火鼠裘",
+    "namePY": "huoshuqiu",
+    "price": 420,
+    "level": 4,
+    "beverage_tags": [
+      "高酒精",
+      "可加热",
+      "辛",
+      "烧酒"
+    ],
+    "from": [
+      "采集-月之都月虹池右上(概率)",
+      "购买-旧地狱鬼商",
+      "任务-女仆长的采购委托、阿求小姐的色纸"
+    ]
+  },
+  {
+    "id": 19,
+    "dlc": "DLC0",
+    "name": "冬酿",
+    "namePY": "dongniang",
+    "price": 60,
+    "level": 2,
+    "beverage_tags": [
+      "低酒精",
+      "甘",
+      "可加热",
+      "可加冰",
+      "古典"
+    ],
+    "from": [
+      "购买-香霖堂(概率)、迷途竹林妖怪兔、旧地狱鬼商、神灵庙道士、太阳花田太阳花精"
+    ]
+  },
+  {
+    "id": 17,
+    "dlc": "DLC0",
+    "name": "教父",
+    "namePY": "jiaofu",
+    "price": 180,
+    "level": 3,
+    "beverage_tags": [
+      "高酒精",
+      "可加冰",
+      "鸡尾酒",
+      "西洋酒",
+      "苦",
+      "古典"
+    ],
+    "from": [
+      "采集-月之都月虹池右上(概率)",
+      "购买-红魔馆妖精女仆、辉针城不良少年",
+      "任务-阿求小姐的色纸"
+    ]
+  },
+  {
+    "id": 22,
+    "dlc": "DLC0",
+    "name": "玉露茶",
+    "namePY": "yulucha",
+    "price": 50,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "古典",
+      "可加热"
+    ],
+    "from": [
+      "购买-博丽神社河童(概率)",
+      "任务-阿求小姐的色纸"
+    ]
+  },
+  {
+    "id": 8,
+    "dlc": "DLC0",
+    "name": "猩红恶魔",
+    "namePY": "xinghongemo",
+    "price": 45,
+    "level": 2,
+    "beverage_tags": [
+      "低酒精",
+      "可加冰",
+      "鸡尾酒",
+      "西洋酒"
+    ],
+    "from": [
+      "购买-博丽神社妖精女仆(概率)"
+    ]
+  },
+  {
+    "id": 16,
+    "dlc": "DLC0",
+    "name": "尼格罗尼",
+    "namePY": "nigeluoni",
+    "price": 100,
+    "level": 3,
+    "beverage_tags": [
+      "中酒精",
+      "鸡尾酒",
+      "可加冰",
+      "水果",
+      "苦",
+      "西洋酒"
+    ],
+    "from": [
+      "采集-太阳花田东侧向日葵田(下)、月之都月虹池右上(概率)",
+      "购买-红魔馆妖精女仆"
+    ]
+  },
+  {
+    "id": 18,
+    "dlc": "DLC0",
+    "name": "风祝",
+    "namePY": "fengzhu",
+    "price": 130,
+    "level": 3,
+    "beverage_tags": [
+      "中酒精",
+      "可加冰",
+      "鸡尾酒",
+      "甘",
+      "现代"
+    ],
+    "from": [
+      "采集-太阳花田东侧向日葵田(上)、月之都月虹池右上(概率)",
+      "购买-太阳花田太阳花精"
+    ]
+  },
+  {
+    "id": 7,
+    "dlc": "DLC0",
+    "name": "天狗踊",
+    "namePY": "tiangouyong",
+    "price": 70,
+    "level": 2,
+    "beverage_tags": [
+      "高酒精",
+      "可加冰",
+      "可加热",
+      "清酒",
+      "直饮"
+    ],
+    "from": [
+      "购买-博丽神社河童、旧地狱鬼商"
+    ]
+  },
+  {
+    "id": 9,
+    "dlc": "DLC0",
+    "name": "神之麦",
+    "namePY": "shenzhimai",
+    "price": 45,
+    "level": 2,
+    "beverage_tags": [
+      "中酒精",
+      "可加冰",
+      "可加热",
+      "烧酒",
+      "直饮"
+    ],
+    "from": [
+      "购买-博丽神社河童、神灵庙道士"
+    ]
+  },
+  {
+    "id": 24,
+    "dlc": "DLC0",
+    "name": "牛奶",
+    "namePY": "niunai",
+    "price": 16,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "直饮"
+    ],
+    "from": [
+      "购买-人间之里清兰"
+    ]
+  },
+  {
+    "id": 25,
+    "dlc": "DLC0",
+    "name": "红柚果汁",
+    "namePY": "hongyouguozhi",
+    "price": 24,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "水果"
+    ],
+    "from": [
+      "购买-人间之里清兰"
+    ]
+  },
+  {
+    "id": 14,
+    "dlc": "DLC0",
+    "name": "阿芙加朵",
+    "namePY": "afujiaduo",
+    "price": 35,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "提神",
+      "甘",
+      "苦",
+      "可加冰"
+    ],
+    "from": [
+      "购买-红魔馆小恶魔"
+    ]
+  },
+  {
+    "id": 27,
+    "dlc": "DLC0",
+    "name": "冰山毛玉冻饮",
+    "namePY": "bingshanmaoyudongyin",
+    "price": 45,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "直饮",
+      "气泡",
+      "提神",
+      "可加冰",
+      "甘",
+      "水果"
+    ],
+    "from": [
+      "购买-妖怪兽道萌澄果"
+    ]
+  },
+  {
+    "id": 15,
+    "dlc": "DLC0",
+    "name": "红雾",
+    "namePY": "hongwu",
+    "price": 75,
+    "level": 2,
+    "beverage_tags": [
+      "中酒精",
+      "可加热",
+      "西洋酒"
+    ],
+    "from": [
+      "购买-红魔馆小恶魔、辉针城不良少年"
+    ]
+  },
+  {
+    "id": 13,
+    "dlc": "DLC0",
+    "name": "红魔馆红茶",
+    "namePY": "hongmoguanhongcha",
+    "price": 25,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "水果",
+      "可加热",
+      "提神"
+    ],
+    "from": [
+      "购买-红魔馆小恶魔"
+    ]
+  },
+  {
+    "id": 28,
+    "dlc": "DLC0",
+    "name": "大冰棍儿",
+    "namePY": "dabingguner",
+    "price": 35,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "提神",
+      "甘",
+      "现代"
+    ],
+    "from": [
+      "购买-妖怪兽道三妖精"
+    ]
+  },
+  {
+    "id": 23,
+    "dlc": "DLC0",
+    "name": "月面火箭",
+    "namePY": "yuemianhuojian",
+    "price": 45,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "可加冰",
+      "现代",
+      "气泡"
+    ],
+    "from": [
+      "采集-迷途竹林西侧添水处"
+    ]
+  },
+  {
+    "id": 1003,
+    "dlc": "DLC1",
+    "name": "古法奶油冰沙",
+    "namePY": "gufanaiyoubingsha",
+    "price": 42,
+    "level": 1,
+    "beverage_tags": [
+      "无酒精",
+      "甘",
+      "可加冰",
+      "古典"
+    ],
+    "from": [
+      "购买-魔法森林上海人形"
+    ]
+  },
+  {
+    "id": 1004,
+    "dlc": "DLC1",
+    "name": "普通健身茶",
+    "namePY": "putongjianshencha",
+    "price": 32,
+    "level": 2,
+    "beverage_tags": [
+      "中酒精",
+      "苦",
+      "气泡",
+      "利口酒"
+    ],
+    "from": [
+      "购买-魔法森林上海人形"
+    ]
+  },
+  {
+    "id": 1001,
+    "dlc": "DLC1",
+    "name": "咖啡",
+    "namePY": "kafei",
+    "price": 62,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "苦",
+      "现代",
+      "可加热",
+      "可加冰",
+      "提神"
+    ],
+    "from": [
+      "购买-魔法森林上海人形"
+    ]
+  },
+  {
+    "id": 1002,
+    "dlc": "DLC1",
+    "name": "妖精雨露",
+    "namePY": "yaojingyulu",
+    "price": 80,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "甘",
+      "可加冰"
+    ],
+    "from": [
+      "采集-魔法森林中部"
+    ]
+  },
+  {
+    "id": 1000,
+    "dlc": "DLC1",
+    "name": "大吟酿",
+    "namePY": "dayinniang",
+    "price": 210,
+    "level": 3,
+    "beverage_tags": [
+      "中酒精",
+      "清酒",
+      "水果",
+      "可加冰",
+      "直饮",
+      "甘",
+      "古典"
+    ],
+    "from": [
+      "购买-妖怪之山河童"
+    ]
+  },
+  {
+    "id": 2000,
+    "dlc": "DLC2",
+    "name": "鬼杀",
+    "namePY": "guisha",
+    "price": 320,
+    "level": 4,
+    "beverage_tags": [
+      "高酒精",
+      "可加冰",
+      "烧酒",
+      "辛",
+      "古典"
+    ],
+    "from": [
+      "购买-旧地狱鬼商"
+    ]
+  },
+  {
+    "id": 2001,
+    "dlc": "DLC2",
+    "name": "气保健",
+    "namePY": "qibaojian",
+    "price": 45,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "甘",
+      "直饮",
+      "提神"
+    ],
+    "from": [
+      "购买-地灵殿地狱鸦"
+    ]
+  },
+  {
+    "id": 2002,
+    "dlc": "DLC2",
+    "name": "古明地冰激凌",
+    "namePY": "gumingdibingjiling",
+    "price": 35,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "甘",
+      "水果",
+      "现代"
+    ],
+    "from": [
+      "购买-地灵殿地狱鸦"
+    ]
+  },
+  {
+    "id": 3000,
+    "dlc": "DLC3",
+    "name": "杨枝甘露",
+    "namePY": "yangzhiganlu",
+    "price": 50,
+    "level": 2,
+    "beverage_tags": [
+      "无酒精",
+      "可加冰",
+      "水果"
+    ],
+    "from": [
+      "购买-命莲寺娜兹琳"
+    ]
+  },
+  {
+    "id": 3001,
+    "dlc": "DLC3",
+    "name": "麒麟",
+    "namePY": "qilin",
+    "price": 180,
+    "level": 3,
+    "beverage_tags": [
+      "中酒精",
+      "啤酒",
+      "直饮"
+    ],
+    "from": [
+      "购买-神灵庙道士"
+    ]
+  },
+  {
+    "id": 4000,
+    "dlc": "DLC4",
+    "name": "天地无用",
+    "namePY": "tiandiwuyong",
+    "price": 150,
+    "level": 3,
+    "beverage_tags": [
+      "高酒精",
+      "烧酒"
+    ],
+    "from": [
+      "采集-辉针城酒窖、月之都月虹池右上",
+      "购买-辉针城不良少年"
+    ]
+  },
+  {
+    "id": 4001,
+    "dlc": "DLC4",
+    "name": "伶人醉",
+    "namePY": "lingrenzui",
+    "price": 100,
+    "level": 3,
+    "beverage_tags": [
+      "低酒精",
+      "直饮",
+      "水果",
+      "古典",
+      "甘"
+    ],
+    "from": [
+      "采集-辉针城酒窖、月之都月虹池右上",
+      "购买-太阳花田太阳花精"
+    ]
+  },
+  {
+    "id": 5000,
+    "dlc": "DLC5",
+    "name": "海的女儿",
+    "namePY": "haidenver",
+    "price": 80,
+    "level": 3,
+    "beverage_tags": [
+      "低酒精",
+      "气泡",
+      "辛",
+      "古典"
+    ],
+    "from": [
+      "购买-魔界小丑"
+    ]
+  },
+  {
+    "id": 5001,
+    "dlc": "DLC5",
+    "name": "魔界咖啡",
+    "namePY": "mojiekafei",
+    "price": 210,
+    "level": 4,
+    "beverage_tags": [
+      "高酒精",
+      "提神",
+      "可加热",
+      "西洋酒"
+    ],
+    "from": [
+      "采集-魔界魅魔房顶",
+      "购买-魔界小丑"
+    ]
+  },
+  {
+    "id": 5002,
+    "dlc": "DLC5",
+    "name": "莫吉托爆浆球",
+    "namePY": "mojituobaojiangqiu",
+    "price": 300,
+    "level": 4,
+    "beverage_tags": [
+      "低酒精",
+      "气泡",
+      "现代",
+      "鸡尾酒"
+    ],
+    "from": [
+      "购买-月之都月兔"
+    ]
+  },
+  {
+    "id": 5003,
+    "dlc": "DLC5",
+    "name": "太空啤酒",
+    "namePY": "taikongpijiu",
+    "price": 42,
+    "level": 3,
+    "beverage_tags": [
+      "中酒精",
+      "现代",
+      "水果",
+      "啤酒"
+    ],
+    "from": [
+      "购买-月之都月兔"
+    ]
+  },
+  {
+    "id": 5004,
+    "dlc": "DLC5",
+    "name": "卫星冰咖啡",
+    "namePY": "weixingbingkafei",
+    "price": 96,
+    "level": 3,
+    "beverage_tags": [
+      "无酒精",
+      "现代",
+      "提神",
+      "苦"
+    ],
+    "from": [
+      "购买-月之都月兔"
+    ]
+  }
+]
