@@ -1,8 +1,10 @@
-import { Mystia, Beverage, Recipes } from '@/lib'
+import { Mystia, CustomerRare, Beverage, Recipe, Ingredient } from '@/lib'
 
 const m = new Mystia()
+const c = new CustomerRare()
 const b = new Beverage()
-const r = new Recipes()
+const r = new Recipe()
+const i = new Ingredient()
 
 console.log(
   m.calcWithBeverage({
@@ -12,6 +14,10 @@ console.log(
   }),
 )
 
+console.log(c.place('人间之里'))
+
 console.table(b.beverage_tags(['高酒精']))
 
 console.log(r.ingredients(['海苔']))
+
+console.log(i.typeNames)

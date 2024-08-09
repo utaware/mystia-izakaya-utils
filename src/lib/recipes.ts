@@ -4,9 +4,9 @@ import { BaseItemMethods } from './base'
 
 import { TRecipeItem } from '@/types'
 
-import { filter } from 'lodash'
+import { filter, uniq } from 'lodash'
 
-export class Recipes extends BaseItemMethods<TRecipeItem> {
+export class Recipe extends BaseItemMethods<TRecipeItem> {
   constructor() {
     super(recipesData)
   }
@@ -25,5 +25,9 @@ export class Recipes extends BaseItemMethods<TRecipeItem> {
 
   tools(args: string[]) {
     return filter(this.collection, ({ tool }) => args.includes(tool))
+  }
+
+  get toolNames() {
+    return uniq(this.collection.map(({ tool }) => tool))
   }
 }
