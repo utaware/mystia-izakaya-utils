@@ -1,4 +1,4 @@
-import { filter, find, isEmpty } from 'lodash'
+import { filter, find, isEmpty, difference } from 'lodash'
 
 import { TBaseItem } from '@/types'
 
@@ -25,5 +25,13 @@ export class BaseItemMethods<T extends TBaseItem> {
 
   names(arg: string) {
     return filter(this.collection, ({ name }) => name.includes(arg))
+  }
+
+  tags<K extends keyof T>(args: string[], key: K) {
+    return filter(this.collection, item => {
+      const target = item[key]
+      const isArray = Array.isArray(target)
+      return isArray ? isEmpty(difference(args, target)) : false
+    })
   }
 }

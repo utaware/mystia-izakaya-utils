@@ -5,10 +5,10 @@ const b = new Beverage()
 
 console.log(
   m.calcWithBeverage({
-    customerName: '',
+    customerName: '莉',
     beverageName: '淇',
     demand: '高酒精',
   }),
 )
 
-console.log(b.tags(['高酒精']))
+console.table(b.beverage_tags(['高酒精']))

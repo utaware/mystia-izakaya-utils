@@ -18,7 +18,7 @@ export interface TBeverageItem extends TGoodsItem {
 }
 
 export interface TRecipeItem extends TGoodsItem {
-  tool: TToolsName
+  tool: string
   time_lv1: number
   time_lv50: number
   from: string
