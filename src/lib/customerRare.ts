@@ -4,11 +4,14 @@ import type { TCustomRareItem } from '@/types'
 
 import { BaseItemMethods } from './base'
 
-import { filter } from 'lodash'
+import { filter, uniq } from 'lodash'
 
 export class CustomerRare extends BaseItemMethods<TCustomRareItem> {
+  placeRange: string[]
+
   constructor() {
     super(customerRareData)
+    this.placeRange = uniq(customerRareData.map(({ place }) => place))
   }
 
   place(place: string) {

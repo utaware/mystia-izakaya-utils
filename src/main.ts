@@ -14,6 +14,9 @@ console.log(
   }),
 )
 
+console.log(c.placeRange)
+console.log(c.dlcRange)
+
 console.log(c.place('人间之里'))
 
 console.table(b.beverage_tags(['高酒精']))

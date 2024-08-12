@@ -1,12 +1,16 @@
-import { filter, find, isEmpty, difference } from 'lodash'
+import { filter, find, isEmpty, difference, uniq } from 'lodash'
 
 import { TBaseItem } from '@/types'
 
 export class BaseItemMethods<T extends TBaseItem> {
   collection: T[]
+  nameRange: string[]
+  dlcRange: string[]
 
   constructor(collection: T[]) {
     this.collection = collection
+    this.nameRange = uniq(collection.map(({ name }) => name))
+    this.dlcRange = uniq(collection.map(({ dlc }) => dlc))
   }
 
   dlc(...args: string[] | number[]) {
@@ -25,6 +29,10 @@ export class BaseItemMethods<T extends TBaseItem> {
 
   names(arg: string) {
     return filter(this.collection, ({ name }) => name.includes(arg))
+  }
+
+  validateName(name: string) {
+    return this.nameRange.includes(name)
   }
 
   tags<K extends keyof T>(args: string[], key: K) {
