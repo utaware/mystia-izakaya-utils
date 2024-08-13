@@ -18,15 +18,15 @@ export class CustomerRare extends BaseItemMethods<TCustomRareItem> {
     return filter(this.collection, { place })
   }
 
-  like_tags(args: string[]) {
-    return super.tags(args, 'like_tags')
+  like_tags(filters: string[], include: boolean) {
+    return this.members(filters, 'like_tags', include)
   }
 
-  hate_tags(args: string[]) {
-    return super.tags(args, 'hate_tags')
+  hate_tags(filters: string[], include: boolean) {
+    return this.members(filters, 'hate_tags', include)
   }
 
-  beverage_tags(args: string[]) {
-    return super.tags(args, 'beverage_tags')
+  beverage_tags(filters: string[], include: boolean) {
+    return this.members(filters, 'beverage_tags', include)
   }
 }

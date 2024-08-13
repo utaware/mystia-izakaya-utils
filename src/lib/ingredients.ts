@@ -11,8 +11,8 @@ export class Ingredient extends BaseItemMethods<TIngredientItem> {
     super(ingredientsData)
   }
 
-  ingredient_tags(args: string[]) {
-    return super.tags(args, 'ingredient_tags')
+  ingredient_tags(filters: string[], include: boolean) {
+    return this.members(filters, 'ingredient_tags', include)
   }
 
   get typeNames() {
