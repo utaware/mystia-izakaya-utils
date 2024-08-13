@@ -1,6 +1,8 @@
-import { filter, find, isEmpty, difference, uniq } from 'lodash'
+import { filter, find, isEmpty, uniq } from 'lodash'
 
 import { TBaseItem } from '@/types'
+
+import { isAllDuplicates, isAllNoDuplicates } from '@/utils'
 
 export class BaseItemMethods<T extends TBaseItem> {
   collection: T[]
@@ -13,13 +15,8 @@ export class BaseItemMethods<T extends TBaseItem> {
     this.dlcRange = uniq(collection.map(({ dlc }) => dlc))
   }
 
-  dlc(...args: string[] | number[]) {
-    if (isEmpty(args)) {
-      return this.collection
-    }
-    return filter(this.collection, ({ dlc }) =>
-      args.some(v => dlc.includes(v.toString())),
-    )
+  dlc(args: string[]) {
+    return this.filterDLC(this.collection, args)
   }
 
   name(arg: string = '') {
@@ -28,18 +25,41 @@ export class BaseItemMethods<T extends TBaseItem> {
   }
 
   names(arg: string) {
-    return filter(this.collection, ({ name }) => name.includes(arg))
+    return this.filterNames(this.collection, arg)
+  }
+
+  filterNames(collection: T[], arg: string) {
+    return filter(collection, ({ name }) => name.includes(arg))
+  }
+
+  filterDLC(collection: T[], args: string[]) {
+    if (isEmpty(args)) {
+      return this.collection
+    }
+    return filter(collection, ({ dlc }) => args.some(v => dlc.includes(v)))
+  }
+
+  filterMembers(
+    collection: T[],
+    key: keyof T,
+    filters: string[],
+    include: boolean = true,
+  ) {
+    return filter(collection, item => {
+      const target = item[key]
+      return Array.isArray(target)
+        ? include
+          ? isAllDuplicates(filters, target)
+          : isAllNoDuplicates(filters, target)
+        : false
+    })
   }
 
   validateName(name: string) {
     return this.nameRange.includes(name)
   }
 
-  tags<K extends keyof T>(args: string[], key: K) {
-    return filter(this.collection, item => {
-      const target = item[key]
-      const isArray = Array.isArray(target)
-      return isArray ? isEmpty(difference(args, target)) : false
-    })
+  tags<K extends keyof T>(filters: string[], key: K, include: boolean = true) {
+    return this.filterMembers(this.collection, key, filters, include)
   }
 }
