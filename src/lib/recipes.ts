@@ -11,16 +11,16 @@ export class Recipe extends BaseItemMethods<TRecipeItem> {
     super(recipesData)
   }
 
-  positive_tags(args: string[]) {
-    return super.tags(args, 'positive_tags')
+  positive_tags(filters: string[], include: boolean) {
+    return this.members(filters, 'positive_tags', include)
   }
 
-  negative_tags(args: string[]) {
-    return super.tags(args, 'negative_tags')
+  negative_tags(filters: string[], include: boolean) {
+    return this.members(filters, 'negative_tags', include)
   }
 
-  ingredients(args: string[]) {
-    return super.tags(args, 'ingredients')
+  ingredients(filters: string[], include: boolean) {
+    return this.members(filters, 'ingredients', include)
   }
 
   tools(args: string[]) {

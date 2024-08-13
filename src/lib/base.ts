@@ -59,7 +59,11 @@ export class BaseItemMethods<T extends TBaseItem> {
     return this.nameRange.includes(name)
   }
 
-  tags<K extends keyof T>(filters: string[], key: K, include: boolean = true) {
+  members<K extends keyof T>(
+    filters: string[],
+    key: K,
+    include: boolean = true,
+  ) {
     return this.filterMembers(this.collection, key, filters, include)
   }
 }

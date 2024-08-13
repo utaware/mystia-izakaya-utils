@@ -11,6 +11,10 @@ export class Beverage extends GoodItemMethods<TBeverageItem> {
     super(beveragesData)
   }
 
+  beverage_tags(filters: string[], include: boolean) {
+    return this.members(filters, 'beverage_tags', include)
+  }
+
   filter(options: TFilterBeverageOptions) {
     const { name = '', dlc = [], beverage_tags = {}, level = [] } = options
     const { include = [], exclude = [] } = beverage_tags
