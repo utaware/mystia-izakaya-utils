@@ -31,3 +31,7 @@ console.log(
     },
   }),
 )
+
+console.log(
+  m.getRecipeWithExtraIngredients('温暖饭团', ['猪肉', '蜂蜜', '露水', '蝉蜕']),
+)
