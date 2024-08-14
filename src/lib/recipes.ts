@@ -1,12 +1,13 @@
 import recipesData from '@/json/recipes.json'
 
-import { BaseItemMethods } from './base'
+import { GoodItemMethods } from './goods'
 
-import { TRecipeItem } from '@/types'
+import type { TRecipeItem, TFilterRecipeOptions } from '@/types'
 
-import { filter, uniq } from 'lodash'
+import { filter, uniq, isEmpty } from 'lodash'
+import { getMembersFilterWithMap, getFilterTupleWithItem } from '@/utils'
 
-export class Recipe extends BaseItemMethods<TRecipeItem> {
+export class Recipe extends GoodItemMethods<TRecipeItem> {
   constructor() {
     super(recipesData)
   }
@@ -23,11 +24,49 @@ export class Recipe extends BaseItemMethods<TRecipeItem> {
     return this.members(filters, 'ingredients', include)
   }
 
-  tools(args: string[]) {
-    return filter(this.collection, ({ tool }) => args.includes(tool))
+  tools(filters: string[]) {
+    return this.filterTools(this.collection, filters)
+  }
+
+  filterTools(collection: TRecipeItem[], filters: string[]) {
+    if (isEmpty(filters)) {
+      return collection
+    }
+    return filter(collection, ({ tool }) => filters.includes(tool))
   }
 
   get toolNames() {
     return uniq(this.collection.map(({ tool }) => tool))
+  }
+
+  filter(options: TFilterRecipeOptions) {
+    const {
+      name = '',
+      dlc = [],
+      level = [],
+      tool = [],
+      positive_tags = {},
+      negative_tags = {},
+      ingredients = {},
+    } = options
+
+    const methods = [
+      getFilterTupleWithItem(name, this.filterNames),
+      getFilterTupleWithItem(dlc, this.filterDLC),
+      getFilterTupleWithItem(level, this.filterLevels),
+      getFilterTupleWithItem(tool, this.filterTools),
+      ...getMembersFilterWithMap(
+        {
+          positive_tags,
+          negative_tags,
+          ingredients,
+        },
+        this.filterMembers,
+      ),
+    ]
+    return methods
+      .map(([value, method]) => (isEmpty(value) ? null : method))
+      .filter(v => typeof v === 'function')
+      .reduce((result, method) => method(result), this.collection)
   }
 }

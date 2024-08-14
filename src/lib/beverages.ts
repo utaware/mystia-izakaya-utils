@@ -6,6 +6,8 @@ import type { TBeverageItem, TFilterBeverageOptions } from '@/types'
 
 import { isEmpty } from 'lodash'
 
+import { getMembersFilterWithMap } from '@/utils'
+
 export class Beverage extends GoodItemMethods<TBeverageItem> {
   constructor() {
     super(beveragesData)
@@ -17,21 +19,11 @@ export class Beverage extends GoodItemMethods<TBeverageItem> {
 
   filter(options: TFilterBeverageOptions) {
     const { name = '', dlc = [], beverage_tags = {}, level = [] } = options
-    const { include = [], exclude = [] } = beverage_tags
     const methods = [
       [name, (items: TBeverageItem[]) => this.filterNames(items, name)],
       [dlc, (items: TBeverageItem[]) => this.filterDLC(items, dlc)],
       [level, (items: TBeverageItem[]) => this.filterLevels(items, level)],
-      [
-        include,
-        (items: TBeverageItem[]) =>
-          this.filterMembers(items, 'beverage_tags', include, true),
-      ],
-      [
-        exclude,
-        (items: TBeverageItem[]) =>
-          this.filterMembers(items, 'beverage_tags', exclude, false),
-      ],
+      ...getMembersFilterWithMap({ beverage_tags }, this.filterMembers),
     ]
     return methods
       .map(([value, method]) => (isEmpty(value) ? null : method))

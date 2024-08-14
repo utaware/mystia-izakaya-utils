@@ -3,8 +3,8 @@ import { intersection } from 'lodash'
 import type { TCustomRareItem, TBeverageItem } from '@/types'
 
 export interface TBeverageMatchItem {
-  customer: string
-  beverage: string
+  customer: TCustomRareItem
+  beverage: TBeverageItem
   match_beverage_tags: string[]
   point: number
   isMeetDemand: boolean
@@ -26,8 +26,8 @@ export function matchSingleBeverageTags({
   const point = match_beverage_tags.length
   const isMeetDemand = demand ? beverage_tags.includes(demand) : false
   return {
-    customer: customer.name,
-    beverage: beverage.name,
+    customer,
+    beverage,
     match_beverage_tags,
     point,
     isMeetDemand,

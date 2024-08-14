@@ -3,8 +3,8 @@ import { intersection } from 'lodash'
 import type { TCustomRareItem, TRecipeItem } from '@/types'
 
 interface TRecipeMatchItem {
-  customer: string
-  recipe: string
+  customer: TCustomRareItem
+  recipe: TRecipeItem
   match_like_tags: string[]
   match_hate_tags: string[]
   point: number
@@ -29,8 +29,8 @@ export function matchSingleRecipeTags({
     .reduce((t, c) => (t += c), 0)
   const isMeetDemand = demand ? positive_tags.includes(demand) : false
   return {
-    customer: customer.name,
-    recipe: recipe.name,
+    recipe,
+    customer,
     match_like_tags,
     match_hate_tags,
     point,

@@ -6,7 +6,7 @@ import { Recipe } from './recipes'
 
 import { matchBeverageTags, matchRecipeTags } from '@/core'
 
-import type { TFilterBeverageOptions } from '@/types'
+import type { TFilterBeverageOptions, TFilterRecipeOptions } from '@/types'
 
 export class Mystia {
   customerRare: CustomerRare
@@ -34,17 +34,17 @@ export class Mystia {
     return hasEmpty ? [] : matchBeverageTags({ customers, beverages, demand })
   }
 
-  matchRecipesWithName({
+  matchRecipes({
     customerName,
-    recipeName,
+    recipe,
     demand = '',
   }: {
     customerName: string
-    recipeName: string
+    recipe: TFilterRecipeOptions
     demand?: string
   }) {
     const customers = this.customerRare.names(customerName)
-    const recipes = this.recipe.names(recipeName)
+    const recipes = this.recipe.filter(recipe)
     const hasEmpty = [customers, recipes].some(isEmpty)
     return hasEmpty ? [] : matchRecipeTags({ customers, recipes, demand })
   }
