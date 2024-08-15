@@ -73,13 +73,11 @@ export class Mystia {
     }
 
     const emptyCount = maxIngredientCount - ingredientCount
-    const extraIngredients = ingredientsName.slice(0, emptyCount)
+    const extraIngredients = ingredientsName
+      .slice(0, emptyCount)
+      .map(name => this.ingredient.name(name))
+      .filter(v => !!v)
 
-    return extraIngredients.reduce((result, name) => {
-      const ingredient = this.ingredient.name(name)
-      return ingredient
-        ? generatorRecipeWithExtraIngredient(result, ingredient)
-        : result
-    }, recipe)
+    return generatorRecipeWithExtraIngredient(recipe, extraIngredients)
   }
 }

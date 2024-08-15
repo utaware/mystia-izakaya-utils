@@ -1,4 +1,4 @@
-import { cloneDeep, difference } from 'lodash'
+import { cloneDeep, difference, isEmpty } from 'lodash'
 
 import { isSomeDuplicates } from '@/utils'
 
@@ -15,21 +15,23 @@ export const recipeOverwriteTagOptions = [
 export function composeRecipeAndIngredientTags({
   recipe_ingredients_name,
   recipe_ingredients_tags,
-  extra_ingredient_name,
-  extra_ingredient_tags,
+  extra_ingredients_name,
+  extra_ingredients_tags,
 }: {
   recipe_ingredients_name: string[]
   recipe_ingredients_tags: string[]
-  extra_ingredient_name: string
-  extra_ingredient_tags: string[]
+  extra_ingredients_name: string[]
+  extra_ingredients_tags: string[]
 }) {
   const union_tags = new Set([
     ...recipe_ingredients_tags,
-    ...extra_ingredient_tags,
+    ...extra_ingredients_tags,
   ])
 
-  const ingredients_count = [...recipe_ingredients_name, extra_ingredient_name]
-    .length
+  const ingredients_count = [
+    ...recipe_ingredients_name,
+    ...extra_ingredients_name,
+  ].length
 
   if (ingredients_count >= 5) {
     union_tags.add('大份')
@@ -57,18 +59,29 @@ export function isDarkCooking(
 
 export function generatorRecipeWithExtraIngredient(
   recipe: TRecipeItem,
-  ingredient: TIngredientItem,
+  ingredients: TIngredientItem[],
 ) {
-  const { positive_tags, ingredients } = recipe
-  const { ingredient_tags, name } = ingredient
+  if (isEmpty(ingredients)) {
+    return recipe
+  }
+
+  const { positive_tags, ingredients: recipe_ingredients_name } = recipe
+  const extra_ingredients_name = ingredients.map(({ name }) => name)
+  const extra_ingredients_tags = ingredients.reduce(
+    (total, { ingredient_tags }) => total.concat(ingredient_tags),
+    [] as string[],
+  )
   const compose_tags = composeRecipeAndIngredientTags({
-    recipe_ingredients_name: ingredients,
+    recipe_ingredients_name,
     recipe_ingredients_tags: positive_tags,
-    extra_ingredient_name: name,
-    extra_ingredient_tags: ingredient_tags,
+    extra_ingredients_name,
+    extra_ingredients_tags,
   })
   const cloneRecipe = cloneDeep(recipe)
-  cloneRecipe.ingredients = [...ingredients, name]
+  cloneRecipe.ingredients = [
+    ...recipe_ingredients_name,
+    ...extra_ingredients_name,
+  ]
   cloneRecipe.positive_tags = compose_tags
   return cloneRecipe
 }
