@@ -5,6 +5,8 @@ import { Beverage } from './beverages'
 import { Recipe } from './recipes'
 import { Ingredient } from './ingredients'
 
+import { maxIngredientCount } from '@/constant'
+
 import {
   matchBeverageTags,
   matchRecipeTags,
@@ -64,19 +66,19 @@ export class Mystia {
     }
 
     const ingredientCount = recipe.ingredients.length
-    const isFull = ingredientCount >= 5
+    const isFull = ingredientCount >= maxIngredientCount
 
     if (isFull) {
       return recipe
     }
 
-    const emptyCount = 5 - ingredientCount
+    const emptyCount = maxIngredientCount - ingredientCount
     const extraIngredients = ingredientsName.slice(0, emptyCount)
 
     return extraIngredients.reduce((result, name) => {
       const ingredient = this.ingredient.name(name)
       return ingredient
-        ? generatorRecipeWithExtraIngredient(recipe, ingredient)
+        ? generatorRecipeWithExtraIngredient(result, ingredient)
         : result
     }, recipe)
   }

@@ -4,18 +4,20 @@ import type { TCustomRareItem } from '@/types'
 
 import { BaseItemMethods } from './base'
 
-import { filter, uniq } from 'lodash'
+import { filter, uniq, isEmpty } from 'lodash'
 
 export class CustomerRare extends BaseItemMethods<TCustomRareItem> {
-  placeRange: string[]
+  placeNames: string[]
 
   constructor() {
     super(customerRareData)
-    this.placeRange = uniq(customerRareData.map(({ place }) => place))
+    this.placeNames = uniq(customerRareData.map(({ place }) => place))
   }
 
-  place(place: string) {
-    return filter(this.collection, { place })
+  place(filters: string[]) {
+    return isEmpty(filters)
+      ? this.collection
+      : filter(this.collection, ({ place }) => filters.includes(place))
   }
 
   like_tags(filters: string[], include: boolean) {
