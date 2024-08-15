@@ -18,8 +18,9 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
+      "@/*": ["src/*"]
     },
+    "esModuleInterop": true
   },
   "include": ["src"]
 }
