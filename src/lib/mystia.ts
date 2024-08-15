@@ -11,12 +11,7 @@ import {
   generatorRecipeWithExtraIngredient,
 } from '@/core'
 
-import type {
-  TFilterBeverageOptions,
-  TFilterRecipeOptions,
-  TIngredientItem,
-  TRecipeItem,
-} from '@/types'
+import type { TFilterBeverageOptions, TFilterRecipeOptions } from '@/types'
 
 export class Mystia {
   customerRare: CustomerRare
@@ -81,17 +76,8 @@ export class Mystia {
     return extraIngredients.reduce((result, name) => {
       const ingredient = this.ingredient.name(name)
       return ingredient
-        ? this.getRecipeWithIngredientItem(result, ingredient)
+        ? generatorRecipeWithExtraIngredient(recipe, ingredient)
         : result
     }, recipe)
-  }
-
-  getRecipeWithIngredientItem(
-    recipe: TRecipeItem,
-    ingredient?: TIngredientItem,
-  ) {
-    return ingredient
-      ? generatorRecipeWithExtraIngredient(recipe, ingredient)
-      : recipe
   }
 }
