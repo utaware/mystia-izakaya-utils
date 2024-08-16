@@ -67,9 +67,9 @@ export function generatorRecipeWithExtraIngredients(
 
   const { positive_tags, ingredients: recipe_ingredients_name } = recipe
   const extra_ingredients_name = ingredients.map(({ name }) => name)
-  const extra_ingredients_tags = ingredients.reduce(
+  const extra_ingredients_tags = ingredients.reduce<string[]>(
     (total, { ingredient_tags }) => total.concat(ingredient_tags),
-    [] as string[],
+    [],
   )
   const compose_tags = composeRecipeAndIngredientTags({
     recipe_ingredients_name,

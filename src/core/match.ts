@@ -147,20 +147,20 @@ export function matchBeverageAndRecipe({
   customer,
   beverage,
   recipe,
-  demandBeverage = '',
-  demandRecipe = '',
+  demandBeverageTag = '',
+  demandRecipeTag = '',
 }: {
   customer?: TCustomRareItem
   beverage?: TBeverageItem
   recipe?: TRecipeItem
-  demandBeverage: string
-  demandRecipe: string
+  demandBeverageTag: string
+  demandRecipeTag: string
 }) {
   const {
     isMeetDemand: isMeetBeverageDemand,
     point: beveragePoint,
     match_beverage_tags,
-  } = matchSingleBeverageTags({ customer, beverage, demand: demandBeverage })
+  } = matchSingleBeverageTags({ customer, beverage, demand: demandBeverageTag })
   const {
     isMeetDemand: isMeetRecipeDemand,
     point: recipePoint,
@@ -169,7 +169,7 @@ export function matchBeverageAndRecipe({
   } = matchSingleRecipeTags({
     customer,
     recipe,
-    demand: demandRecipe,
+    demand: demandRecipeTag,
   })
   const isMeetAllDemand = isMeetBeverageDemand && isMeetRecipeDemand
   const totalPoint = beveragePoint + recipePoint

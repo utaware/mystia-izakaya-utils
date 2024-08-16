@@ -95,15 +95,15 @@ export class Mystia {
     beverageName,
     recipeName,
     ingredientsName,
-    demandBeverage = '',
-    demandRecipe = '',
+    demandBeverageTag = '',
+    demandRecipeTag = '',
   }: {
     customerName: string
     beverageName: string
     recipeName: string
-    ingredientsName: string[]
-    demandBeverage: string
-    demandRecipe: string
+    ingredientsName?: string[]
+    demandBeverageTag?: string
+    demandRecipeTag?: string
   }) {
     const customer = this.#customerRares.name(customerName)
     const beverage = this.#beverages.name(beverageName)
@@ -112,8 +112,8 @@ export class Mystia {
       customer,
       beverage,
       recipe,
-      demandBeverage,
-      demandRecipe,
+      demandBeverageTag,
+      demandRecipeTag,
     })
   }
 }

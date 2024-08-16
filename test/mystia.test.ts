@@ -76,3 +76,78 @@ describe('菜谱添加食材', () => {
     ])
   })
 })
+
+describe('顾客评价', () => {
+  test('all √', () => {
+    expect(
+      m.match({
+        customerName: '莉格露',
+        recipeName: '幻昙花糕',
+        beverageName: '淇',
+        ingredientsName: ['蝉蜕'],
+        demandBeverageTag: '可加冰',
+        demandRecipeTag: '甜',
+      }).evaluationLevel,
+    ).toBe(4)
+  })
+
+  test('x: 食物需求', () => {
+    expect(
+      m.match({
+        customerName: '莉格露',
+        recipeName: '幻昙花糕',
+        beverageName: '淇',
+        ingredientsName: ['蝉蜕'],
+        demandBeverageTag: '可加冰',
+        demandRecipeTag: '',
+      }).evaluationLevel,
+    ).toBe(3)
+  })
+
+  test('x: 需求', () => {
+    expect(
+      m.match({
+        customerName: '莉格露',
+        recipeName: '幻昙花糕',
+        beverageName: '淇',
+        ingredientsName: ['蝉蜕'],
+        demandBeverageTag: '',
+        demandRecipeTag: '甜',
+      }).evaluationLevel,
+    ).toBe(3)
+  })
+
+  test('x: 需求', () => {
+    expect(
+      m.match({
+        customerName: '莉格露',
+        recipeName: '幻昙花糕',
+        beverageName: '淇',
+        ingredientsName: ['蝉蜕'],
+        demandBeverageTag: '',
+        demandRecipeTag: '',
+      }).evaluationLevel,
+    ).toBe(2)
+  })
+
+  test('x: 需求&食材', () => {
+    expect(
+      m.match({
+        customerName: '莉格露',
+        recipeName: '幻昙花糕',
+        beverageName: '淇',
+      }).evaluationLevel,
+    ).toBe(2)
+  })
+
+  test('x: 需求', () => {
+    expect(
+      m.match({
+        customerName: '莉格露',
+        recipeName: '幻昙花糕',
+        beverageName: '淇',
+        ingredientsName: ['竹笋'],
+      }).evaluationLevel,
+    ).toBe(1)
+  })
+})
