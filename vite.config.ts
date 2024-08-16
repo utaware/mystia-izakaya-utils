@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
-function pathResolve (url) {
+function pathResolve(url) {
   return resolve(__dirname, url)
 }
 
@@ -13,9 +13,9 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: './lib/main.ts',
+      entry: './src/lib/index.ts',
       name: 'main',
-      fileName: 'main'
-    }
-  }
+      fileName: 'main',
+    },
+  },
 })
