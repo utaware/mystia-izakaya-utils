@@ -8,7 +8,7 @@ import { isEmpty } from 'lodash'
 
 import { getMembersFilterWithMap } from '@/utils'
 
-export class Beverage extends GoodItemMethods<TBeverageItem> {
+export class Beverages extends GoodItemMethods<TBeverageItem> {
   constructor() {
     super(beveragesData)
   }

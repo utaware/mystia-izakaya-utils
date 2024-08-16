@@ -1,8 +1,8 @@
 import { filter } from 'lodash'
 
-import { CustomerRare } from '../src/lib'
+import { CustomerRares } from '../src/lib'
 
-const c = new CustomerRare()
+const c = new CustomerRares()
 
 const total = c.collection.length
 

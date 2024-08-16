@@ -7,7 +7,7 @@ import type { TRecipeItem, TFilterRecipeOptions } from '@/types'
 import { filter, uniq, isEmpty } from 'lodash'
 import { getMembersFilterWithMap, getFilterTupleWithItem } from '@/utils'
 
-export class Recipe extends GoodItemMethods<TRecipeItem> {
+export class Recipes extends GoodItemMethods<TRecipeItem> {
   constructor() {
     super(recipesData)
   }

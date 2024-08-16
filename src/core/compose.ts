@@ -57,7 +57,7 @@ export function isDarkCooking(
   return isSomeDuplicates(ingredient_tags, negative_tags)
 }
 
-export function generatorRecipeWithExtraIngredient(
+export function generatorRecipeWithExtraIngredients(
   recipe: TRecipeItem,
   ingredients: TIngredientItem[],
 ) {

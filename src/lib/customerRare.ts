@@ -6,7 +6,7 @@ import { BaseItemMethods } from './base'
 
 import { filter, uniq, isEmpty } from 'lodash'
 
-export class CustomerRare extends BaseItemMethods<TCustomRareItem> {
+export class CustomerRares extends BaseItemMethods<TCustomRareItem> {
   placeNames: string[]
 
   constructor() {

@@ -6,7 +6,7 @@ import { TIngredientItem } from '@/types'
 
 import { uniq } from 'lodash'
 
-export class Ingredient extends BaseItemMethods<TIngredientItem> {
+export class Ingredients extends BaseItemMethods<TIngredientItem> {
   constructor() {
     super(ingredientsData)
   }
