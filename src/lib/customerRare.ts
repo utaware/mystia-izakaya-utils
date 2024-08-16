@@ -14,8 +14,8 @@ export class CustomerRares extends BaseItemMethods<TCustomRareItem> {
     this.placeNames = uniq(customerRareData.map(({ place }) => place))
   }
 
-  place(filters: string[]) {
-    return isEmpty(filters)
+  place(filters?: string[]) {
+    return isEmpty<string[]>(filters)
       ? this.collection
       : filter(this.collection, ({ place }) => filters.includes(place))
   }

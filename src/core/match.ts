@@ -3,16 +3,16 @@ import { intersection } from 'lodash'
 import type { TCustomRareItem, TBeverageItem, TRecipeItem } from '@/types'
 
 export interface TBeverageMatchItem {
-  customer: TCustomRareItem
-  beverage: TBeverageItem
+  customer?: TCustomRareItem
+  beverage?: TBeverageItem
   match_beverage_tags: string[]
   point: number
   isMeetDemand: boolean
 }
 
 export interface TRecipeMatchItem {
-  customer: TCustomRareItem
-  recipe: TRecipeItem
+  customer?: TCustomRareItem
+  recipe?: TRecipeItem
   match_like_tags: string[]
   match_hate_tags: string[]
   point: number
@@ -24,10 +24,18 @@ export function matchSingleBeverageTags({
   beverage,
   demand = '',
 }: {
-  customer: TCustomRareItem
-  beverage: TBeverageItem
+  customer?: TCustomRareItem
+  beverage?: TBeverageItem
   demand?: string
 }): TBeverageMatchItem {
+  const defaultResult: TBeverageMatchItem = {
+    match_beverage_tags: [],
+    point: 0,
+    isMeetDemand: false,
+  }
+  if (!customer || !beverage) {
+    return defaultResult
+  }
   const [customer_tags, beverage_tags] = [customer, beverage].map(
     ({ beverage_tags }) => beverage_tags,
   )
@@ -66,10 +74,19 @@ export function matchSingleRecipeTags({
   recipe,
   demand = '',
 }: {
-  customer: TCustomRareItem
-  recipe: TRecipeItem
+  customer?: TCustomRareItem
+  recipe?: TRecipeItem
   demand?: string
 }): TRecipeMatchItem {
+  const defaultResult: TRecipeMatchItem = {
+    match_like_tags: [],
+    match_hate_tags: [],
+    point: 0,
+    isMeetDemand: false,
+  }
+  if (!customer || !recipe) {
+    return defaultResult
+  }
   const { like_tags, hate_tags } = customer
   const { positive_tags } = recipe
   const match_like_tags = intersection(like_tags, positive_tags)
@@ -79,8 +96,8 @@ export function matchSingleRecipeTags({
     .reduce((t, c) => (t += c), 0)
   const isMeetDemand = demand ? positive_tags.includes(demand) : false
   return {
-    recipe,
     customer,
+    recipe,
     match_like_tags,
     match_hate_tags,
     point,
@@ -104,4 +121,81 @@ export function matchMutipleRecipeTags({
       ),
     )
   }, [])
+}
+
+export function getCustomerEvaluationLevel({
+  isMeetBeverageDemand,
+  isMeetRecipeDemand,
+  beveragePoint,
+  recipePoint,
+}: {
+  isMeetBeverageDemand: boolean
+  isMeetRecipeDemand: boolean
+  beveragePoint: number
+  recipePoint: number
+}) {
+  const baseDemandPoint = 2
+  const demandPoint = [isMeetBeverageDemand, isMeetRecipeDemand].reduce(
+    (t, c) => (t += Number(c)),
+    baseDemandPoint,
+  )
+  const totalPoint = beveragePoint + recipePoint
+  return Math.min(demandPoint, totalPoint)
+}
+
+export function matchBeverageAndRecipe({
+  customer,
+  beverage,
+  recipe,
+  demandBeverage = '',
+  demandRecipe = '',
+}: {
+  customer?: TCustomRareItem
+  beverage?: TBeverageItem
+  recipe?: TRecipeItem
+  demandBeverage: string
+  demandRecipe: string
+}) {
+  const {
+    isMeetDemand: isMeetBeverageDemand,
+    point: beveragePoint,
+    match_beverage_tags,
+  } = matchSingleBeverageTags({ customer, beverage, demand: demandBeverage })
+  const {
+    isMeetDemand: isMeetRecipeDemand,
+    point: recipePoint,
+    match_like_tags,
+    match_hate_tags,
+  } = matchSingleRecipeTags({
+    customer,
+    recipe,
+    demand: demandRecipe,
+  })
+  const isMeetAllDemand = isMeetBeverageDemand && isMeetRecipeDemand
+  const totalPoint = beveragePoint + recipePoint
+  const evaluationLevel = getCustomerEvaluationLevel({
+    isMeetBeverageDemand,
+    isMeetRecipeDemand,
+    beveragePoint,
+    recipePoint,
+  })
+  return {
+    customer,
+    recipe,
+    beverage,
+    match_beverage_tags,
+    match_like_tags,
+    match_hate_tags,
+    isMeetDemand: {
+      beverage: isMeetBeverageDemand,
+      recipe: isMeetRecipeDemand,
+    },
+    point: {
+      beverage: beveragePoint,
+      recipe: recipePoint,
+    },
+    isMeetAllDemand,
+    totalPoint,
+    evaluationLevel,
+  }
 }

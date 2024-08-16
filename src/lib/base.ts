@@ -19,9 +19,10 @@ export class BaseItemMethods<T extends TBaseItem> {
     return this.filterDLC(this.collection, args)
   }
 
-  name(arg: string = '') {
-    const result = find(this.collection, ({ name }) => name.includes(arg))
-    return result
+  name(arg?: string) {
+    return arg
+      ? find(this.collection, ({ name }) => name.includes(arg))
+      : void 0
   }
 
   names(arg: string) {

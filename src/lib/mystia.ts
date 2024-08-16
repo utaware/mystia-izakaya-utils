@@ -10,6 +10,7 @@ import { maxIngredientCount } from '@/constant'
 import {
   matchMutipleBeverageTags,
   matchMutipleRecipeTags,
+  matchBeverageAndRecipe,
   generatorRecipeWithExtraIngredients,
 } from '@/core'
 
@@ -66,7 +67,7 @@ export class Mystia {
     const recipe = this.#recipes.name(recipeName)
 
     if (!recipe) {
-      return null
+      return
     }
 
     if (isEmpty(ingredientsName)) {
@@ -87,5 +88,32 @@ export class Mystia {
       .filter(v => !!v)
 
     return generatorRecipeWithExtraIngredients(recipe, extraIngredients)
+  }
+
+  match({
+    customerName,
+    beverageName,
+    recipeName,
+    ingredientsName,
+    demandBeverage = '',
+    demandRecipe = '',
+  }: {
+    customerName: string
+    beverageName: string
+    recipeName: string
+    ingredientsName: string[]
+    demandBeverage: string
+    demandRecipe: string
+  }) {
+    const customer = this.#customerRares.name(customerName)
+    const beverage = this.#beverages.name(beverageName)
+    const recipe = this.recipe(recipeName, ingredientsName)
+    return matchBeverageAndRecipe({
+      customer,
+      beverage,
+      recipe,
+      demandBeverage,
+      demandRecipe,
+    })
   }
 }
