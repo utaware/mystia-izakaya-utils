@@ -1,12 +1,12 @@
 import ingredientsData from '@/json/ingredients.json'
 
-import { BaseItemMethods } from './base'
+import { GoodItemMethods } from './goods'
 
 import { TIngredientItem } from '@/types'
 
 import { uniq } from 'lodash'
 
-export class Ingredients extends BaseItemMethods<TIngredientItem> {
+export class Ingredients extends GoodItemMethods<TIngredientItem> {
   constructor() {
     super(ingredientsData)
   }
