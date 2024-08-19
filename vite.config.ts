@@ -24,4 +24,7 @@ export default defineConfig({
     dts({ rollupTypes: true }),
     visualizer({ filename: './script/stats.html' }),
   ],
+  json: {
+    stringify: true,
+  },
 })
