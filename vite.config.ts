@@ -20,5 +20,8 @@ export default defineConfig({
       fileName: 'main',
     },
   },
-  plugins: [dts({ rollupTypes: true }), visualizer()],
+  plugins: [
+    dts({ rollupTypes: true }),
+    visualizer({ filename: './script/stats.html' }),
+  ],
 })
