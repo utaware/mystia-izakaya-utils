@@ -1,194 +1,106 @@
 [
   {
     "name": "摩多罗隐岐奈",
-    "namePY": "moduoluoyinqinai",
     "dlc": "",
     "place": "",
     "price": "???",
-    "bonus_card": [
-      "-"
-    ],
-    "punish_card": [
-      "-"
-    ],
+    "bonus_card": ["-"],
+    "punish_card": ["-"],
     "reward": [],
     "task": [],
-    "like_tags": [
-      "-"
-    ],
-    "hate_tags": [
-      "-"
-    ],
-    "beverage_tags": [
-      "-"
-    ]
+    "like_tags": ["-"],
+    "hate_tags": ["-"],
+    "beverage_tags": ["-"]
   },
   {
     "name": "芙兰朵露",
-    "namePY": "fulanduolu",
     "dlc": "",
     "place": "",
     "price": "???",
-    "bonus_card": [
-      "-"
-    ],
-    "punish_card": [
-      "-"
-    ],
+    "bonus_card": ["-"],
+    "punish_card": ["-"],
     "reward": [],
     "task": [],
-    "like_tags": [
-      "-"
-    ],
-    "hate_tags": [
-      "-"
-    ],
-    "beverage_tags": [
-      "-"
-    ]
+    "like_tags": ["-"],
+    "hate_tags": ["-"],
+    "beverage_tags": ["-"]
   },
   {
     "name": "若鹭姬",
-    "namePY": "ruoluji",
     "dlc": "",
     "place": "",
     "price": "???",
-    "bonus_card": [
-      "-"
-    ],
-    "punish_card": [
-      "-"
-    ],
+    "bonus_card": ["-"],
+    "punish_card": ["-"],
     "reward": [],
     "task": [],
-    "like_tags": [
-      "-"
-    ],
-    "hate_tags": [
-      "-"
-    ],
-    "beverage_tags": [
-      "-"
-    ]
+    "like_tags": ["-"],
+    "hate_tags": ["-"],
+    "beverage_tags": ["-"]
   },
   {
     "name": "八意永琳",
-    "namePY": "bayiyonglin",
     "dlc": "",
     "place": "",
     "price": "???",
-    "bonus_card": [
-      "-"
-    ],
-    "punish_card": [
-      "-"
-    ],
+    "bonus_card": ["-"],
+    "punish_card": ["-"],
     "reward": [],
     "task": [],
-    "like_tags": [
-      "-"
-    ],
-    "hate_tags": [
-      "-"
-    ],
-    "beverage_tags": [
-      "-"
-    ]
+    "like_tags": ["-"],
+    "hate_tags": ["-"],
+    "beverage_tags": ["-"]
   },
   {
     "name": "稀神探女",
-    "namePY": "xishentannv",
     "dlc": "",
     "place": "",
     "price": "???",
-    "bonus_card": [
-      "-"
-    ],
-    "punish_card": [
-      "-"
-    ],
+    "bonus_card": ["-"],
+    "punish_card": ["-"],
     "reward": [],
     "task": [],
-    "like_tags": [
-      "-"
-    ],
-    "hate_tags": [
-      "-"
-    ],
-    "beverage_tags": [
-      "-"
-    ]
+    "like_tags": ["-"],
+    "hate_tags": ["-"],
+    "beverage_tags": ["-"]
   },
   {
     "name": "四季映姬",
-    "namePY": "sijiyingji",
     "dlc": "",
     "place": "",
     "price": "???",
-    "bonus_card": [
-      "-"
-    ],
-    "punish_card": [
-      "-"
-    ],
+    "bonus_card": ["-"],
+    "punish_card": ["-"],
     "reward": [],
     "task": [],
-    "like_tags": [
-      "-"
-    ],
-    "hate_tags": [
-      "-"
-    ],
-    "beverage_tags": [
-      "-"
-    ]
+    "like_tags": ["-"],
+    "hate_tags": ["-"],
+    "beverage_tags": ["-"]
   },
   {
     "name": "宫出口瑞灵",
-    "namePY": "gongchukouruiling",
     "dlc": "",
     "place": "",
     "price": "???",
-    "bonus_card": [
-      "-"
-    ],
-    "punish_card": [
-      "-"
-    ],
+    "bonus_card": ["-"],
+    "punish_card": ["-"],
     "reward": [],
     "task": [],
-    "like_tags": [
-      "-"
-    ],
-    "hate_tags": [
-      "-"
-    ],
-    "beverage_tags": [
-      "-"
-    ]
+    "like_tags": ["-"],
+    "hate_tags": ["-"],
+    "beverage_tags": ["-"]
   },
   {
     "name": "神绮",
-    "namePY": "shenqi",
     "dlc": "DLC9",
     "place": "特殊",
     "price": "4000-6000",
-    "bonus_card": [
-      "-"
-    ],
-    "punish_card": [
-      "-"
-    ],
+    "bonus_card": ["-"],
+    "punish_card": ["-"],
     "reward": [],
     "task": [],
-    "like_tags": [
-      "-"
-    ],
-    "hate_tags": [
-      "-"
-    ],
-    "beverage_tags": [
-      "-"
-    ]
+    "like_tags": ["-"],
+    "hate_tags": ["-"],
+    "beverage_tags": ["-"]
   }
 ]
