@@ -1,6 +1,6 @@
 import { filter, find, isEmpty, uniq } from 'lodash'
 
-import { TBaseItem } from '@/types'
+import type { TBaseItem } from '@/types'
 
 import { isAllDuplicates, isAllNoDuplicates } from '@/utils'
 

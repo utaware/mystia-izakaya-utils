@@ -1,7 +1,6 @@
 export interface TBaseItem {
   dlc: string
   name: string
-  namePY: string
 }
 
 export interface TGoodsItem extends TBaseItem {

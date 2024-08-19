@@ -1,6 +1,6 @@
 import { BaseItemMethods } from './base'
 
-import { TGoodsItem } from '@/types'
+import type { TGoodsItem } from '@/types'
 
 import { filter } from 'lodash'
 

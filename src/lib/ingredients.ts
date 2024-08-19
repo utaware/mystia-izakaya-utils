@@ -2,7 +2,7 @@ import ingredientsData from '@/json/ingredients.json'
 
 import { GoodItemMethods } from './goods'
 
-import { TIngredientItem } from '@/types'
+import type { TIngredientItem } from '@/types'
 
 import { uniq } from 'lodash'
 
