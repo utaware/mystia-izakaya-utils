@@ -4,7 +4,7 @@ import { GoodItemMethods } from './goods'
 
 import type { TBeverageItem, TFilterBeverageOptions } from '@/types'
 
-import { isEmpty } from 'lodash'
+import isEmpty from 'lodash/isEmpty'
 
 import { getMembersFilterWithMap } from '@/utils'
 

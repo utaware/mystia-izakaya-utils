@@ -4,7 +4,7 @@ import { GoodItemMethods } from './goods'
 
 import type { TIngredientItem } from '@/types'
 
-import { uniq } from 'lodash'
+import uniq from 'lodash/uniq'
 
 export class Ingredients extends GoodItemMethods<TIngredientItem> {
   constructor() {

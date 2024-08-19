@@ -1,4 +1,7 @@
-import { filter, find, isEmpty, uniq } from 'lodash'
+import filter from 'lodash/filter'
+import find from 'lodash/find'
+import isEmpty from 'lodash/isEmpty'
+import uniq from 'lodash/uniq'
 
 import type { TBaseItem } from '@/types'
 

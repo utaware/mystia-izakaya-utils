@@ -4,7 +4,9 @@ import type { TCustomRareItem } from '@/types'
 
 import { BaseItemMethods } from './base'
 
-import { filter, uniq, isEmpty } from 'lodash'
+import filter from 'lodash/filter'
+import uniq from 'lodash/uniq'
+import isEmpty from 'lodash/isEmpty'
 
 export class CustomerRares extends BaseItemMethods<TCustomRareItem> {
   placeNames: string[]

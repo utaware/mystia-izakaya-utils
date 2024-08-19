@@ -2,7 +2,7 @@ import { BaseItemMethods } from './base'
 
 import type { TGoodsItem } from '@/types'
 
-import { filter } from 'lodash'
+import filter from 'lodash/filter'
 
 export class GoodItemMethods<T extends TGoodsItem> extends BaseItemMethods<T> {
   constructor(collection: T[]) {

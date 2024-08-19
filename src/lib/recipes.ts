@@ -4,7 +4,10 @@ import { GoodItemMethods } from './goods'
 
 import type { TRecipeItem, TFilterRecipeOptions } from '@/types'
 
-import { filter, uniq, isEmpty } from 'lodash'
+import filter from 'lodash/filter'
+import uniq from 'lodash/uniq'
+import isEmpty from 'lodash/isEmpty'
+
 import { getMembersFilterWithMap, getFilterTupleWithItem } from '@/utils'
 
 export class Recipes extends GoodItemMethods<TRecipeItem> {

@@ -1,4 +1,6 @@
-import { cloneDeep, difference, isEmpty } from 'lodash'
+import cloneDeep from 'lodash/cloneDeep'
+import difference from 'lodash/difference'
+import isEmpty from 'lodash/isEmpty'
 
 import { isSomeDuplicates } from '@/utils'
 
