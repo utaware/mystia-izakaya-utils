@@ -1,5 +1,6 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 
 function pathResolve(url) {
   return resolve(__dirname, url)
@@ -18,4 +19,5 @@ export default defineConfig({
       fileName: 'main',
     },
   },
+  plugins: [dts({ rollupTypes: true })],
 })

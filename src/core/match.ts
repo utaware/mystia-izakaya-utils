@@ -1,23 +1,13 @@
 import { intersection } from 'lodash'
 
-import type { TCustomRareItem, TBeverageItem, TRecipeItem } from '@/types'
-
-export interface TBeverageMatchItem {
-  customer?: TCustomRareItem
-  beverage?: TBeverageItem
-  match_beverage_tags: string[]
-  point: number
-  isMeetDemand: boolean
-}
-
-export interface TRecipeMatchItem {
-  customer?: TCustomRareItem
-  recipe?: TRecipeItem
-  match_like_tags: string[]
-  match_hate_tags: string[]
-  point: number
-  isMeetDemand: boolean
-}
+import type {
+  TCustomRareItem,
+  TBeverageItem,
+  TRecipeItem,
+  TBeverageMatchItem,
+  TRecipeMatchItem,
+  TRecipeAndBeverageMatchItem,
+} from '@/types'
 
 export function matchSingleBeverageTags({
   customer,
@@ -155,7 +145,7 @@ export function matchBeverageAndRecipe({
   recipe?: TRecipeItem
   demandBeverageTag: string
   demandRecipeTag: string
-}) {
+}): TRecipeAndBeverageMatchItem {
   const {
     isMeetDemand: isMeetBeverageDemand,
     point: beveragePoint,
