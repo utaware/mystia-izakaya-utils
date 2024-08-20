@@ -3,6 +3,11 @@ export interface TBaseItem {
   name: string
 }
 
+export interface TBaseInitOptions<T> {
+  collection: T[]
+  dlc?: string[]
+}
+
 export interface TGoodsItem extends TBaseItem {
   level: number
   price: number

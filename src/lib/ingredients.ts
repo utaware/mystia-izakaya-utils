@@ -7,8 +7,8 @@ import type { TIngredientItem } from '@/types'
 import uniq from 'lodash/uniq'
 
 export class Ingredients extends GoodItemMethods<TIngredientItem> {
-  constructor() {
-    super(ingredientsData)
+  constructor(dlc?: string[]) {
+    super({ collection: ingredientsData, dlc })
   }
 
   ingredient_tags(filters: string[], include: boolean) {

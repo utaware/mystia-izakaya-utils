@@ -9,8 +9,8 @@ import isEmpty from 'lodash/isEmpty'
 import { getMembersFilterWithMap } from '@/utils'
 
 export class Beverages extends GoodItemMethods<TBeverageItem> {
-  constructor() {
-    super(beveragesData)
+  constructor(dlc?: string[]) {
+    super({ collection: beveragesData, dlc })
   }
 
   beverage_tags(filters: string[], include: boolean) {

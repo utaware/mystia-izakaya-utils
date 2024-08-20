@@ -1,12 +1,12 @@
 import { BaseItemMethods } from './base'
 
-import type { TGoodsItem } from '@/types'
+import type { TGoodsItem, TBaseInitOptions } from '@/types'
 
 import filter from 'lodash/filter'
 
 export class GoodItemMethods<T extends TGoodsItem> extends BaseItemMethods<T> {
-  constructor(collection: T[]) {
-    super(collection)
+  constructor({ collection, dlc = [] }: TBaseInitOptions<T>) {
+    super({ collection, dlc })
   }
 
   levels(filters: number[]) {

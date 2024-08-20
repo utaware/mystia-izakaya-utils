@@ -17,16 +17,16 @@ import {
 import type { TFilterBeverageOptions, TFilterRecipeOptions } from '@/types'
 
 export class Mystia {
-  #customerRares: CustomerRares
-  #beverages: Beverages
-  #recipes: Recipes
-  #ingredients: Ingredients
+  customerRares: CustomerRares
+  beverages: Beverages
+  recipes: Recipes
+  ingredients: Ingredients
 
-  constructor() {
-    this.#customerRares = new CustomerRares()
-    this.#beverages = new Beverages()
-    this.#recipes = new Recipes()
-    this.#ingredients = new Ingredients()
+  constructor(dlc?: string[]) {
+    this.customerRares = new CustomerRares(dlc)
+    this.beverages = new Beverages(dlc)
+    this.recipes = new Recipes(dlc)
+    this.ingredients = new Ingredients(dlc)
   }
 
   matchBeverages({
@@ -38,8 +38,8 @@ export class Mystia {
     beverage: TFilterBeverageOptions
     demand?: string
   }) {
-    const customers = this.#customerRares.names(customerName)
-    const beverages = this.#beverages.filter(beverage)
+    const customers = this.customerRares.names(customerName)
+    const beverages = this.beverages.filter(beverage)
     const hasEmpty = [customers, beverages].some(isEmpty)
     return hasEmpty
       ? []
@@ -55,8 +55,8 @@ export class Mystia {
     recipe: TFilterRecipeOptions
     demand?: string
   }) {
-    const customers = this.#customerRares.names(customerName)
-    const recipes = this.#recipes.filter(recipe)
+    const customers = this.customerRares.names(customerName)
+    const recipes = this.recipes.filter(recipe)
     const hasEmpty = [customers, recipes].some(isEmpty)
     return hasEmpty
       ? []
@@ -64,7 +64,7 @@ export class Mystia {
   }
 
   recipe(recipeName: string, ingredientsName: string[] = []) {
-    const recipe = this.#recipes.name(recipeName)
+    const recipe = this.recipes.name(recipeName)
 
     if (!recipe) {
       return
@@ -84,7 +84,7 @@ export class Mystia {
     const emptyCount = maxIngredientCount - ingredientCount
     const extraIngredients = ingredientsName
       .slice(0, emptyCount)
-      .map(name => this.#ingredients.name(name))
+      .map(name => this.ingredients.name(name))
       .filter(v => !!v)
 
     return generatorRecipeWithExtraIngredients(recipe, extraIngredients)
@@ -105,8 +105,8 @@ export class Mystia {
     demandBeverageTag?: string
     demandRecipeTag?: string
   }) {
-    const customer = this.#customerRares.name(customerName)
-    const beverage = this.#beverages.name(beverageName)
+    const customer = this.customerRares.name(customerName)
+    const beverage = this.beverages.name(beverageName)
     const recipe = this.recipe(recipeName, ingredientsName)
     return matchBeverageAndRecipe({
       customer,

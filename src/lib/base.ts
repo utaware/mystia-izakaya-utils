@@ -3,7 +3,7 @@ import find from 'lodash/find'
 import isEmpty from 'lodash/isEmpty'
 import uniq from 'lodash/uniq'
 
-import type { TBaseItem } from '@/types'
+import type { TBaseItem, TBaseInitOptions } from '@/types'
 
 import { isAllDuplicates, isAllNoDuplicates } from '@/utils'
 
@@ -12,10 +12,12 @@ export class BaseItemMethods<T extends TBaseItem> {
   nameRange: string[]
   dlcRange: string[]
 
-  constructor(collection: T[]) {
-    this.collection = collection
-    this.nameRange = uniq(collection.map(({ name }) => name))
-    this.dlcRange = uniq(collection.map(({ dlc }) => dlc))
+  constructor({ collection, dlc = [] }: TBaseInitOptions<T>) {
+    this.collection = isEmpty(dlc)
+      ? collection
+      : this.filterDLC(collection, dlc)
+    this.nameRange = uniq(this.collection.map(({ name }) => name))
+    this.dlcRange = uniq(this.collection.map(({ dlc }) => dlc))
   }
 
   dlc(args: string[]) {

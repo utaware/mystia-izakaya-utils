@@ -59,7 +59,7 @@ describe('customer_rare: DLC', () => {
 
 describe('customer_rare: place', () => {
   test('placeNames', () => {
-    expect(c.placeNames).toEqual(customerRarePlaceNames)
+    expect(c.placeRange).toEqual(customerRarePlaceNames)
   })
 
   test('place(): collection', () => {

@@ -11,8 +11,8 @@ import isEmpty from 'lodash/isEmpty'
 import { getMembersFilterWithMap, getFilterTupleWithItem } from '@/utils'
 
 export class Recipes extends GoodItemMethods<TRecipeItem> {
-  constructor() {
-    super(recipesData)
+  constructor(dlc?: string[]) {
+    super({ collection: recipesData, dlc })
   }
 
   positive_tags(filters: string[], include: boolean) {

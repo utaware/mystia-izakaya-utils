@@ -9,11 +9,11 @@ import uniq from 'lodash/uniq'
 import isEmpty from 'lodash/isEmpty'
 
 export class CustomerRares extends BaseItemMethods<TCustomRareItem> {
-  placeNames: string[]
+  placeRange: string[]
 
-  constructor() {
-    super(customerRareData)
-    this.placeNames = uniq(customerRareData.map(({ place }) => place))
+  constructor(dlc?: string[]) {
+    super({ collection: customerRareData, dlc })
+    this.placeRange = uniq(this.collection.map(({ place }) => place))
   }
 
   place(filters?: string[]) {
